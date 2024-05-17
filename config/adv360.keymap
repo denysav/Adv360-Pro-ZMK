@@ -1226,7 +1226,7 @@
             bindings = <
 &kp ESCAPE      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none                                                      &none          &kp LG(N6)  &kp LG(N7)    &kp LG(N8)     &kp LG(N9)        &kp LG(N0)     &none
 &kp LG(TAB)     &kp LG(Q)   &kp LG(W)   &kp LG(E)   &kp LG(R)   &kp LG(T)   &none                                                      &none          &kp LG(Y)   &kp LG(U)     &kp LG(I)      &kp LG(O)         &kp LG(P)      &none
-&kp LG(ESCAPE)  &sk LCTRL   &sk LALT    &sk LSHFT   &sk LGUI    &kp LG(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp LG(H)   &kp LG(J)     &kp LG(K)      &kp LG(L)         &kp LG(SEMI)   &sl 3
+&kp LG(ESCAPE)  &sk LCTRL   &sk LALT    &sk LSHFT   &none       &kp LG(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp LG(H)   &kp LG(J)     &kp LG(K)      &kp LG(L)         &kp LG(SEMI)   &sl 3
 &none           &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)                             &none      &none                                &kp LG(N)   &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)       &kp LG(FSLH)   &none
 &none           &none       &none       &none       &none                   &kp LG(BSPC)  &kp DELETE  &none      &none  &kp LG(ENTER)  &kp LG(SPACE)              &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none
             >;
@@ -1389,6 +1389,16 @@
 &none  &none         &none         &none         &none         &none         &none        &m_bt_profile  &w_bt_profile      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &kp K_PREV            &kp K_PLAY_PAUSE      &kp K_NEXT  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                                     &none              &none                                           &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_MUTE  &none  &none
 &none  &none         &none         &none         &none                       &to 0        &to 8          &to 16             &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC            &bl BL_DEC            &none       &none  &none
+            >;
+        };
+
+        MacModL_LSHIFT {
+            bindings = <
+&kp ESCAPE      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none                                                      &none          &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)        &kp LS(N0)     &none
+&kp LS(TAB)     &kp LS(Q)   &kp LS(W)   &kp LS(E)   &kp LS(R)   &kp LS(T)   &none                                                      &none          &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)         &kp LS(P)      &none
+&kp LS(ESCAPE)  &sk LCTRL   &sk LALT    &none       &sk LGUI    &kp LS(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)         &kp LS(SEMI)   &sl 3
+&none           &kp LS(Z)   &kp LS(X)   &kp LS(C)   &kp LS(V)   &kp LS(B)                             &none      &none                                &kp LS(N)   &kp LS(M)     &kp LG(COMMA)  &kp LG(DOT)       &kp LG(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp LS(BSPC)  &kp DELETE  &none      &none  &kp LS(ENTER)  &kp LS(SPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP_ARROW)  &kp LS(RIGHT)  &none
             >;
         };
     };
