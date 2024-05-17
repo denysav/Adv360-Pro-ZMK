@@ -1201,9 +1201,7 @@
                 <&macro_pause_for_release>,
                 <&macro_param_2to1>,
                 <&macro_release>,
-                <&sl MACRO_PLACEHOLDER &macro_param_1to1>,
-                <&macro_release>,
-                <&kp MACRO_PLACEHOLDER>;
+                <&sl MACRO_PLACEHOLDER>;
 
             label = "PRESS_STICKY_AND_TO_L_R_STICKY";
         };
