@@ -1397,6 +1397,26 @@
 &kp ESCAPE      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none                                                      &none          &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)        &kp LS(N0)     &none
 &kp LS(TAB)     &kp LS(Q)   &kp LS(W)   &kp LS(E)   &kp LS(R)   &kp LS(T)   &none                                                      &none          &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)         &kp LS(P)      &none
 &kp LS(ESCAPE)  &sk LCTRL   &sk LALT    &none       &sk LGUI    &kp LS(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)         &kp LS(SEMI)   &sl 3
+&none           &kp LS(Z)   &kp LS(X)   &kp LS(C)   &kp LS(V)   &kp LS(B)                             &none      &none                                &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)       &kp LS(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp LS(BSPC)  &kp DELETE  &none      &none  &kp LS(ENTER)  &kp LS(SPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP_ARROW)  &kp LS(RIGHT)  &none
+            >;
+        };
+
+        MacModL_LALT {
+            bindings = <
+&kp ESCAPE      &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &none                                                      &none          &kp LA(N6)  &kp LA(N7)    &kp LA(N8)     &kp LA(N9)        &kp LA(N0)     &none
+&kp LA(TAB)     &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &none                                                      &none          &kp LA(Y)   &kp LA(U)     &kp LA(I)      &kp LA(O)         &kp LA(P)      &none
+&kp LA(ESCAPE)  &sk LCTRL   &none       &sk LSHIFT  &sk LGUI    &kp LA(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp LA(H)   &kp LA(J)     &kp LA(K)      &kp LA(L)         &kp LA(SEMI)   &sl 3
+&none           &kp LA(Z)   &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)                             &none      &none                                &kp LA(N)   &kp LA(M)     &kp LA(COMMA)  &kp LA(DOT)       &kp LA(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp LA(BSPC)  &kp DELETE  &none      &none  &kp LA(ENTER)  &kp LA(SPACE)              &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP_ARROW)  &kp LA(RIGHT)  &none
+            >;
+        };
+
+        MacModL_LCTRL {
+            bindings = <
+&kp ESCAPE      &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &none                                                      &none          &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)        &kp LS(N0)     &none
+&kp LC(TAB)     &kp LC(Q)   &kp LC(W)   &kp LC(E)   &kp LC(R)   &kp LC(T)   &none                                                      &none          &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)         &kp LS(P)      &none
+&kp LC(ESCAPE)  &none       &sk LALT    &sk LSHIFT  &sk LGUI    &kp LS(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)         &kp LS(SEMI)   &sl 3
 &none           &kp LS(Z)   &kp LS(X)   &kp LS(C)   &kp LS(V)   &kp LS(B)                             &none      &none                                &kp LS(N)   &kp LS(M)     &kp LG(COMMA)  &kp LG(DOT)       &kp LG(FSLH)   &none
 &none           &none       &none       &none       &none                   &kp LS(BSPC)  &kp DELETE  &none      &none  &kp LS(ENTER)  &kp LS(SPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP_ARROW)  &kp LS(RIGHT)  &none
             >;
