@@ -751,18 +751,18 @@
             layers = <14>;
         };
 
-        win_mode_l {
+        win_mod_l {
             bindings = <&sl 15>;
             key-positions = <31 30>;
-            timeout-ms = <35>;
+            timeout-ms = <41>;
             require-prior-idle-ms = <(-1)>;
             layers = <14>;
         };
 
-        win_mode_r {
+        win_mod_r {
             bindings = <&sl 15>;
             key-positions = <42 43>;
-            timeout-ms = <35>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <(-1)>;
             layers = <14>;
         };
