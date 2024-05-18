@@ -114,15 +114,6 @@
             mods = <(MOD_RSFT)>;
         };
 
-        w_select_all_none: w_select_all_none {
-            compatible = "zmk,behavior-mod-morph";
-            label = "W_SELECT_ALL_NONE";
-            bindings = <&kp LA(A)>, <&select_none>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
-        };
-
         w_alt_tab_behaviour: w_alt_tab_behaviour {
             compatible = "zmk,behavior-hold-tap";
             label = "W_ALT_TAB_BEHAVIOUR";
