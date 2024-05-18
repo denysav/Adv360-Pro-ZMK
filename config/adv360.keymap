@@ -1414,11 +1414,21 @@
 
         MacModR_RSHIFT {
             bindings = <
-&kp ESCAPE   &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)  &none                                                      &none          &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)        &kp RS(N0)     &none
-&kp RG(TAB)  &kp RS(Q)   &kp RS(W)   &kp RS(E)   &kp RS(R)   &kp RS(T)   &none                                                      &none          &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)         &kp RS(P)      &none
-&kp ESCAPE   &kp RS(A)   &kp RS(S)   &kp RS(D)   &kp RS(F)   &kp RS(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp RS(H)   &sk RGUI      &none          &sk RALT          &sk RCTRL      &kp F24
-&none        &kp RS(Z)   &kp RS(X)   &kp RS(C)   &kp RS(V)   &kp RS(B)                             &none      &none                                &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)       &kp RS(FSLH)   &none
-&none        &none       &none       &none       &none                   &kp RS(BSPC)  &kp DELETE  &none      &none  &kp RS(ENTER)  &kp RS(SPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP_ARROW)  &kp RS(RIGHT)  &none
+&kp ESCAPE      &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)  &none                                                      &none          &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)        &kp RS(N0)     &none
+&kp RS(TAB)     &kp RS(Q)   &kp RS(W)   &kp RS(E)   &kp RS(R)   &kp RS(T)   &none                                                      &none          &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)         &kp RS(P)      &none
+&kp RS(ESCAPE)  &kp RS(A)   &kp RS(S)   &kp RS(D)   &kp RS(F)   &kp RS(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp RS(H)   &sk RGUI      &none          &sk RALT          &sk RCTRL      &kp F24
+&none           &kp RS(Z)   &kp RS(X)   &kp RS(C)   &kp RS(V)   &kp RS(B)                             &none      &none                                &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)       &kp RS(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp RS(BSPC)  &kp DELETE  &none      &none  &kp RS(ENTER)  &kp RS(SPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP_ARROW)  &kp RS(RIGHT)  &none
+            >;
+        };
+
+        MacModR_RALT {
+            bindings = <
+&kp ESCAPE      &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)  &none                                                      &none          &kp RA(N6)  &kp RA(N7)    &kp RA(N8)     &kp RA(N9)        &kp RA(N0)     &none
+&kp RA(TAB)     &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)   &none                                                      &none          &kp RA(Y)   &kp RA(U)     &kp RA(I)      &kp RA(O)         &kp RA(P)      &none
+&kp RA(ESCAPE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp RA(H)   &sk RGUI      &sk RSHIFT     &none             &sk RCTRL      &kp F24
+&none           &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)                             &none      &none                                &kp RA(N)   &kp RA(M)     &kp RA(COMMA)  &kp RA(DOT)       &kp RA(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp RA(BSPC)  &kp DELETE  &none      &none  &kp RA(ENTER)  &kp RA(SPACE)              &kp RA(LEFT)  &kp RA(DOWN)   &kp RA(UP_ARROW)  &kp RA(RIGHT)  &none
             >;
         };
     };
