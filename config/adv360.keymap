@@ -1232,13 +1232,13 @@
             >;
         };
 
-        MacModeR {
+        MacModeR_GUI {
             bindings = <
-&kp ESCAPE        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none                                              &none      &kp N6  &kp N7    &kp N8      &kp N9        &kp N0     &none
-&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                              &none      &kp Y   &kp U     &kp I       &kp O         &kp P      &none
-&mac_mode_r_to_l  &kp A   &kp S   &kp D   &kp F   &kp G   &none     &kp F24     &none      &none  &kp F24    &none      &kp H   &sk RGUI  &sk RSHIFT  &sk RALT      &sk RCTRL  &kp F24
-&none             &kp Z   &kp X   &kp C   &kp V   &kp B                         &none      &none                        &kp N   &kp M     &kp COMMA   &kp DOT       &kp FSLH   &none
-&none             &none   &none   &none   &none           &kp BSPC  &kp DELETE  &none      &none  &kp ENTER  &kp SPACE          &kp LEFT  &kp DOWN    &kp UP_ARROW  &kp RIGHT  &none
+&kp ESCAPE   &kp RG(N1)  &kp RG(N2)  &kp RG(N3)  &kp RG(N4)  &kp RG(N5)  &none                                                      &none          &kp RG(N6)  &kp RG(N7)    &kp RG(N8)     &kp RG(N9)        &kp RG(N0)     &none
+&kp RG(TAB)  &kp RG(Q)   &kp RG(W)   &kp RG(E)   &kp RG(R)   &kp RG(T)   &none                                                      &none          &kp RG(Y)   &kp RG(U)     &kp RG(I)      &kp RG(O)         &kp RG(P)      &none
+&kp ESCAPE   &kp RG(A)   &kp RG(S)   &kp RG(D)   &kp RG(F)   &kp RG(G)   &none         &kp F24     &none      &none  &kp F24        &none          &kp RG(H)   &none         &sk RSHIFT     &sk RALT          &sk RCTRL      &kp F24
+&none        &kp RG(Z)   &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(B)                             &none      &none                                &kp RG(N)   &kp RG(M)     &kp RG(COMMA)  &kp RG(DOT)       &kp RG(FSLH)   &none
+&none        &none       &none       &none       &none                   &kp RG(BSPC)  &kp DELETE  &none      &none  &kp RG(ENTER)  &kp RG(SPACE)              &kp RG(LEFT)  &kp RG(DOWN)   &kp RG(UP_ARROW)  &kp RG(RIGHT)  &none
             >;
         };
 
