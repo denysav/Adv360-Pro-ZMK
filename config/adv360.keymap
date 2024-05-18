@@ -46,17 +46,18 @@
             hold-trigger-on-release;
         };
 
-        hmr_combo_like: hmr_combo_like {
+        hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR_COMBO_LIKE";
+            label = "HMR";
             #binding-cells = <2>;
-            tapping-term-ms = <35>;
-            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <270>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <100>;
+            quick-tap-ms = <175>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 37 38 53 68 69 70>;
+            require-prior-idle-ms = <150>;
         };
 
         hmsl: hmsl {
@@ -1182,11 +1183,11 @@
 
         MacBase {
             bindings = <
-&kp ESCAPE                          &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &layer_toggle_moment 18 4                                                        &layer_toggle_moment 18 6  &kp N6  &kp N7    &kp N8     &kp N9                  &kp N0                           &kp MINUS
-&kp TAB                             &kp Q      &kp W      &kp E      &kp R      &kp T   &sk LS(LA(LG(LCTRL)))                                                            &sk RS(RA(RG(RCTRL)))      &kp Y   &kp U     &kp I      &kp O                   &kp P                            &kp BACKSLASH
-&m_left_mod_alt_tab_layer 0 2       &kp A      &kp S      &kp D      &kp F      &kp G   &sk LS(LA(LCTRL))          &kp LGUI  &kp LALT      &kp RCTRL  &kp ENTER          &sk RS(RA(RCTRL))          &kp H   &kp J     &kp K      &hmr_combo_like RALT L  &hmr_combo_like RCTRL SEMICOLON  &sl 3
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z      &kp X      &kp C      &kp V      &kp B                                        &kp HOME      &kp PG_UP                                                &kp N   &kp M     &kp COMMA  &kp DOT                 &kp FSLH                         &thumb_kp_sticky_key RSHIFT RSHIFT
-&none                               &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)          &thumb 5 BACKSPACE         &sl 1     &kp END       &kp PG_DN  &sticky_thumb 5 3  &space 4 SPACE                     &kp LEFT  &kp DOWN   &kp UP_ARROW            &kp RIGHT                        &none
+&kp ESCAPE                          &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &layer_toggle_moment 18 4                                                &layer_toggle_moment 18 6  &kp N6  &kp N7    &kp N8     &kp N9        &kp N0                &kp MINUS
+&kp TAB                             &kp Q      &kp W      &kp E      &kp R      &kp T   &sk LS(LA(LG(LCTRL)))                                                    &sk RS(RA(RG(RCTRL)))      &kp Y   &kp U     &kp I      &kp O         &kp P                 &kp BACKSLASH
+&m_left_mod_alt_tab_layer 0 2       &kp A      &kp S      &kp D      &kp F      &kp G   &sk LS(LA(LCTRL))          &kp LGUI  &kp LALT      &kp RCTRL  &kp ENTER  &sk RS(RA(RCTRL))          &kp H   &kp J     &kp K      &kp L         &hmr RCTRL SEMICOLON  &sl 3
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z      &kp X      &kp C      &kp V      &kp B                                        &kp HOME      &kp PG_UP                                        &kp N   &kp M     &kp COMMA  &kp DOT       &kp FSLH              &thumb_kp_sticky_key RSHIFT RSHIFT
+&none                               &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)          &thumb 5 BACKSPACE         &sl 1     &kp END       &kp PG_DN  &kp ENTER  &space 4 SPACE                     &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT             &none
             >;
         };
 
@@ -1232,11 +1233,11 @@
 
         MacSymbols {
             bindings = <
-&kp GRAVE        &kp BACKSLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp COMMA      &none                                                    &none                 &none          &none                          &none                      &none                          &none                            &kp BACKSLASH
-&kp EXCLAMATION  &kp LEFT_BRACE    &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE   &kp QUESTION   &kp AT                                                   &none                 &none          &kp N7                         &kp N8                     &kp N9                         &kp MINUS                        &kp TAB
-&kp POUND        &hml LCTRL CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp PERCENT  &none  &none      &kp BACKSLASH  &kp N0     &none                 &kp BACKSPACE  &hmr_combo_like RGUI NUMBER_4  &hmr_combo_like RSHIFT N5  &hmr_combo_like RALT NUMBER_6  &hmr_combo_like RCTRL SEMICOLON  &kp BACKSPACE
-&kp COLON        &kp LESS_THAN     &kp PIPE              &kp MINUS               &kp GREATER_THAN  &kp KP_DIVIDE                      &none      &kp DOT                                         &none          &kp NUMBER_1                   &kp NUMBER_2               &kp NUMBER_3                   &kp SLASH                        &none
-&kp TILDE        &kp AMPERSAND     &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PLUS                         &trans       &none  &none      &kp COMMA      &kp ENTER  &non_repeat_kp SPACE                 &kp N0                         &kp PLUS                   &kp MINUS                      &kp RIGHT                        &none
+&kp GRAVE        &kp BACKSLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp COMMA      &none                                                    &none                 &none          &none               &none           &none               &none                 &kp BACKSLASH
+&kp EXCLAMATION  &kp LEFT_BRACE    &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE   &kp QUESTION   &kp AT                                                   &none                 &none          &kp N7              &kp N8          &kp N9              &kp MINUS             &kp TAB
+&kp POUND        &hml LCTRL CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp PERCENT  &none  &none      &kp BACKSLASH  &kp N0     &none                 &kp BACKSPACE  &hmr RGUI NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
+&kp COLON        &kp LESS_THAN     &kp PIPE              &kp MINUS               &kp GREATER_THAN  &kp KP_DIVIDE                      &none      &kp DOT                                         &none          &kp NUMBER_1        &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
+&kp TILDE        &kp AMPERSAND     &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PLUS                         &trans       &none  &none      &kp COMMA      &kp ENTER  &non_repeat_kp SPACE                 &kp N0              &kp PLUS        &kp MINUS           &kp RIGHT             &none
             >;
         };
 
@@ -1302,11 +1303,11 @@
 
         WinSymbols {
             bindings = <
-&kp GRAVE  &kp BACKSLASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON      &kp COMMA     &none                                                        &none                 &none  &none                           &none                      &none                          &none                            &kp BACKSLASH
-&kp EXCL   &kp LEFT_BRACE   &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE    &kp QUESTION  &kp AT                                                       &none                 &none  &kp N7                          &kp N8                     &kp N9                         &none                            &kp TAB
-&kp HASH   &hml LGUI CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LCTRL DOLLAR  &kp ASTERISK  &kp PERCENT  &trans  &trans        &kp BACKSLASH  &kp N0     &none                 &none  &hmr_combo_like RCTRL NUMBER_4  &hmr_combo_like RSHIFT N5  &hmr_combo_like RALT NUMBER_6  &hmr_combo_like RCTRL SEMICOLON  &kp BACKSPACE
-&kp COLON  &kp LESS_THAN    &kp PIPE              &kp MINUS               &kp GREATER_THAN   &kp SLASH                          &kp HOME      &kp DOT                                         &none  &kp NUMBER_1                    &kp NUMBER_2               &kp NUMBER_3                   &kp SLASH                        &none
-&kp TILDE  &kp AMPERSAND    &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp KP_PLUS                      &kp SPACE    &trans  &kp END       &kp COMMA      &kp ENTER  &non_repeat_kp SPACE         &kp N0                          &kp PLUS                   &kp MINUS                      &kp RIGHT                        &none
+&kp GRAVE  &kp BACKSLASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON      &kp COMMA     &none                                                        &none                 &none  &none                &none           &none               &none                 &kp BACKSLASH
+&kp EXCL   &kp LEFT_BRACE   &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE    &kp QUESTION  &kp AT                                                       &none                 &none  &kp N7               &kp N8          &kp N9              &none                 &kp TAB
+&kp HASH   &hml LGUI CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LCTRL DOLLAR  &kp ASTERISK  &kp PERCENT  &trans  &trans        &kp BACKSLASH  &kp N0     &none                 &none  &hmr RCTRL NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
+&kp COLON  &kp LESS_THAN    &kp PIPE              &kp MINUS               &kp GREATER_THAN   &kp SLASH                          &kp HOME      &kp DOT                                         &none  &kp NUMBER_1         &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
+&kp TILDE  &kp AMPERSAND    &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp KP_PLUS                      &kp SPACE    &trans  &kp END       &kp COMMA      &kp ENTER  &non_repeat_kp SPACE         &kp N0               &kp PLUS        &kp MINUS           &kp RIGHT             &none
             >;
         };
 
