@@ -1317,7 +1317,7 @@
             bindings = <
 &kp ESCAPE      &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &none                                                               &none          &kp LA(N6)  &kp LA(N7)    &kp LA(N8)     &kp LA(N9)        &kp LA(N0)     &none
 &kp LA(TAB)     &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &none                                                               &none          &kp LA(Y)   &kp LA(U)     &kp LA(I)      &kp LA(O)         &kp LA(P)      &none
-&kp LA(ESCAPE)  &sk LCMD    &none       &sk LSHIFT  &sk LCTRL   &kp LA(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp LA(H)   &kp LA(J)     &kp LA(K)      &kp LA(L)         &kp LA(SEMI)   &sl 6
+&kp LA(ESCAPE)  &sk LCMD    &none       &sk LSHIFT  &sk LCTRL   &kp LA(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp LA(H)   &kp LA(J)     &kp LA(K)      &kp LA(L)         &kp LA(SEMI)   &none
 &none           &kp LA(Z)   &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)                                      &none      &none                                &kp LA(N)   &kp LA(M)     &kp LA(COMMA)  &kp LA(DOT)       &kp LA(FSLH)   &none
 &none           &none       &none       &none       &none                   &kp LA(BSPC)  &reset_mod_layer 15  &none      &none  &kp LA(ENTER)  &kp LA(SPACE)              &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP_ARROW)  &kp LA(RIGHT)  &none
             >;
