@@ -687,27 +687,12 @@
             require-prior-idle-ms = <(-1)>;
         };
 
-        base_layer_shift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <35 36>;
-            timeout-ms = <80>;
-            layers = <0 14>;
-        };
-
         mac_fn_sticky {
             bindings = <&sl 13>;
             key-positions = <65 70>;
             timeout-ms = <50>;
             layers = <0>;
             require-prior-idle-ms = <(-1)>;
-        };
-
-        base_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <17 18>;
-            require-prior-idle-ms = <(-1)>;
-            timeout-ms = <35>;
-            layers = <0 14>;
         };
 
         sym_comma {
@@ -758,14 +743,6 @@
             layers = <6>;
         };
 
-        base_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <16 17>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <0 14 10 24>;
-        };
-
         win_fn_sticky {
             bindings = <&sl 27>;
             key-positions = <65 70>;
@@ -775,7 +752,7 @@
         };
 
         win_mode_l {
-            bindings = <&sl 0>;
+            bindings = <&sl 15>;
             key-positions = <31 30>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
@@ -783,25 +760,11 @@
         };
 
         win_mode_r {
-            bindings = <&sl 0>;
+            bindings = <&sl 15>;
             key-positions = <42 43>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
             layers = <14>;
-        };
-
-        win_mode_l_to_r {
-            bindings = <&sl 0>;
-            key-positions = <43 42>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
-        win_mode_r_to_l_combo {
-            bindings = <&win_mode_r_to_l>;
-            key-positions = <30 31>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <(-1)>;
         };
 
         sym_percent {
