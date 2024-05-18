@@ -290,14 +290,14 @@
         Win_Nav_Prev_Word {
             bindings = <&kp LC(LEFT)>;
             key-positions = <30 31>;
-            layers = <16>;
+            layers = <24>;
             timeout-ms = <50>;
         };
 
         Win_Nav_Next_Word {
             bindings = <&kp RC(RIGHT)>;
             key-positions = <31 32>;
-            layers = <16>;
+            layers = <24>;
             timeout-ms = <50>;
         };
 
@@ -392,14 +392,14 @@
             bindings = <&kp LC(LA(V))>;
             key-positions = <63 64>;
             timeout-ms = <50>;
-            layers = <14 16>;
+            layers = <14 24>;
         };
 
         w_redo {
             bindings = <&kp LC(Y)>;
             key-positions = <61 62>;
             timeout-ms = <50>;
-            layers = <14 16>;
+            layers = <14 24>;
         };
 
         w_select_word_base {
@@ -413,14 +413,14 @@
             bindings = <&w_select_word_mod>;
             key-positions = <30 32>;
             timeout-ms = <50>;
-            layers = <16>;
+            layers = <24>;
         };
 
         w_delete_word_backward {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <65 32 31>;
             timeout-ms = <50>;
-            layers = <14 16>;
+            layers = <14 24>;
             require-prior-idle-ms = <(-1)>;
         };
 
@@ -428,7 +428,7 @@
             bindings = <&kp LC(DELETE)>;
             key-positions = <66 32 31>;
             timeout-ms = <50>;
-            layers = <14 16>;
+            layers = <14 24>;
             require-prior-idle-ms = <(-1)>;
         };
 
@@ -450,14 +450,14 @@
             bindings = <&w_delete_line>;
             key-positions = <65 31 30>;
             timeout-ms = <50>;
-            layers = <14 16>;
+            layers = <14 24>;
             require-prior-idle-ms = <(-1)>;
         };
 
         backspace_repeat {
             bindings = <&backspace_repeat>;
             key-positions = <65 29>;
-            layers = <0 10 14 16>;
+            layers = <0 10 14 24>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
         };
@@ -465,7 +465,7 @@
         whitespace_repeat {
             bindings = <&whitespace_repeat>;
             key-positions = <70 44>;
-            layers = <0 11 14 16>;
+            layers = <0 11 14 24>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
         };
@@ -473,7 +473,7 @@
         enter_repeat {
             bindings = <&enter_repeat>;
             key-positions = <69 44>;
-            layers = <0 10 14 16>;
+            layers = <0 10 14 24>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
         };
@@ -496,7 +496,7 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <32 70>;
             timeout-ms = <80>;
-            layers = <14 16>;
+            layers = <14 24>;
         };
 
         m_lalt_lgui_space {
@@ -517,7 +517,7 @@
             bindings = <&kp LC(LS(ENTER))>;
             key-positions = <32 31 69>;
             timeout-ms = <95>;
-            layers = <14 16>;
+            layers = <14 24>;
         };
 
         caps_lock {
@@ -539,7 +539,7 @@
             bindings = <&w_alt_tab_layer>;
             key-positions = <31 32>;
             timeout-ms = <35>;
-            layers = <14 16>;
+            layers = <14 24>;
             require-prior-idle-ms = <(-1)>;
         };
 
@@ -572,7 +572,7 @@
             key-positions = <65 41>;
             timeout-ms = <85>;
             require-prior-idle-ms = <(-1)>;
-            layers = <14 16>;
+            layers = <14 24>;
         };
 
         w_delete_word_forward_cross {
@@ -580,7 +580,7 @@
             key-positions = <66 41>;
             timeout-ms = <85>;
             require-prior-idle-ms = <(-1)>;
-            layers = <14 16>;
+            layers = <14 24>;
         };
 
         w_delete_line_cross {
@@ -588,13 +588,13 @@
             key-positions = <65 42>;
             timeout-ms = <70>;
             require-prior-idle-ms = <(-1)>;
-            layers = <14 16>;
+            layers = <14 24>;
         };
 
         left_square_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 17>;
-            layers = <11 17>;
+            layers = <11 25>;
             timeout-ms = <80>;
             require-prior-idle-ms = <(-1)>;
         };
@@ -604,7 +604,7 @@
             key-positions = <17 18>;
             timeout-ms = <80>;
             require-prior-idle-ms = <(-1)>;
-            layers = <11 17>;
+            layers = <11 25>;
         };
 
         w_lctrl_slash {
@@ -652,7 +652,7 @@
         sym_excl {
             bindings = <&kp EXCL>;
             key-positions = <30 17>;
-            layers = <11 17>;
+            layers = <11 25>;
             require-prior-idle-ms = <(-1)>;
             timeout-ms = <85>;
         };
@@ -661,21 +661,21 @@
             bindings = <&kp AMPS>;
             key-positions = <47 48>;
             timeout-ms = <80>;
-            layers = <11 17>;
+            layers = <11 25>;
         };
 
         sym_tilde {
             bindings = <&kp TILDE>;
             key-positions = <48 49>;
             timeout-ms = <80>;
-            layers = <11 17>;
+            layers = <11 25>;
         };
 
         sym_zero {
             bindings = <&kp N0>;
             key-positions = <55 56>;
             timeout-ms = <35>;
-            layers = <11 17>;
+            layers = <11 25>;
             require-prior-idle-ms = <(-1)>;
         };
 
@@ -683,7 +683,7 @@
             bindings = <&homedir>;
             key-positions = <48 49 50>;
             timeout-ms = <80>;
-            layers = <11 17>;
+            layers = <11 25>;
             require-prior-idle-ms = <(-1)>;
         };
 
@@ -715,14 +715,14 @@
             key-positions = <56 57>;
             timeout-ms = <45>;
             require-prior-idle-ms = <(-1)>;
-            layers = <11 17>;
+            layers = <11 25>;
         };
 
         sym_dot {
             bindings = <&kp DOT>;
             key-positions = <57 58>;
             timeout-ms = <65>;
-            layers = <11 17>;
+            layers = <11 25>;
             require-prior-idle-ms = <(-1)>;
         };
 
@@ -763,11 +763,11 @@
             key-positions = <16 17>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
-            layers = <0 14 10 16>;
+            layers = <0 14 10 24>;
         };
 
         win_fn_sticky {
-            bindings = <&sl 19>;
+            bindings = <&sl 27>;
             key-positions = <65 70>;
             timeout-ms = <50>;
             require-prior-idle-ms = <(-1)>;
@@ -809,7 +809,7 @@
             key-positions = <31 50>;
             timeout-ms = <85>;
             require-prior-idle-ms = <(-1)>;
-            layers = <11 17>;
+            layers = <11 25>;
         };
 
         sym_at_two_key {
@@ -817,7 +817,7 @@
             key-positions = <31 48>;
             timeout-ms = <85>;
             require-prior-idle-ms = <(-1)>;
-            layers = <11 17>;
+            layers = <11 25>;
         };
 
         sym_question {
@@ -825,7 +825,7 @@
             key-positions = <32 17>;
             timeout-ms = <85>;
             require-prior-idle-ms = <(-1)>;
-            layers = <11 17>;
+            layers = <11 25>;
         };
     };
 
@@ -854,14 +854,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 20>,
+                <&mo 28>,
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LEFT_ALT>,
                 <&macro_release>,
-                <&mo 20>,
+                <&mo 28>,
                 <&macro_press>;
 
             label = "TEST";
@@ -872,7 +872,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 20>,
+                <&mo 28>,
                 <&macro_press>,
                 <&kp LGUI>,
                 <&macro_release>,
@@ -883,7 +883,7 @@
                 <&macro_release>,
                 <&kp LGUI>,
                 <&macro_release>,
-                <&mo 20>;
+                <&mo 28>;
 
             label = "M_ALT_TAB";
         };
@@ -1083,14 +1083,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_release>,
-                <&mo 17>,
+                <&mo 25>,
                 <&macro_press>,
-                <&mo 16>,
+                <&mo 24>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 16>,
+                <&mo 24>,
                 <&macro_press>,
-                <&mo 17>;
+                <&mo 25>;
 
             label = "W_FROM_NAV_TO_SYM";
             wait-ms = <5>;
@@ -1172,7 +1172,7 @@
 
         MacBase {
             bindings = <
-&kp ESCAPE                          &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &layer_toggle_moment 23 10                                                &layer_toggle_moment 23 12  &kp N6  &kp N7    &kp N8     &kp N9        &kp N0                &kp MINUS
+&kp ESCAPE                          &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &layer_toggle_moment 31 10                                                &layer_toggle_moment 31 12  &kp N6  &kp N7    &kp N8     &kp N9        &kp N0                &kp MINUS
 &kp TAB                             &kp Q      &kp W      &kp E      &kp R      &kp T   &sk LS(LA(LG(LCTRL)))                                                     &sk RS(RA(RG(RCTRL)))       &kp Y   &kp U     &kp I      &kp O         &kp P                 &kp BACKSLASH
 &m_left_mod_alt_tab_layer 0 2       &kp A      &kp S      &kp D      &kp F      &kp G   &sk LS(LA(LCTRL))           &kp LGUI  &kp LALT      &kp RCTRL  &kp ENTER  &sk RS(RA(RCTRL))           &kp H   &kp J     &kp K      &kp L         &hmr RCTRL SEMICOLON  &sl 6
 &thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z      &kp X      &kp C      &kp V      &kp B                                         &kp HOME      &kp PG_UP                                         &kp N   &kp M     &kp COMMA  &kp DOT       &kp FSLH              &thumb_kp_sticky_key RSHIFT RSHIFT
@@ -1194,7 +1194,7 @@
             bindings = <
 &kp ESCAPE      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none                                                              &none          &kp LG(N6)  &kp LG(N7)    &kp LG(N8)     &kp LG(N9)        &kp LG(N0)     &none
 &kp LG(TAB)     &kp LG(Q)   &kp LG(W)   &kp LG(E)   &kp LG(R)   &kp LG(T)   &none                                                              &none          &kp LG(Y)   &kp LG(U)     &kp LG(I)      &kp LG(O)         &kp LG(P)      &none
-&kp LG(ESCAPE)  &sk LCTRL   &sk LALT    &sk LSHFT   &none       &kp LG(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LG(H)   &kp LG(J)     &kp LG(K)      &kp LG(L)         &kp LG(SEMI)   &sl 6
+&kp LG(ESCAPE)  &sk LCTRL   &sk LALT    &sk LSHFT   &none       &kp LG(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LG(H)   &kp LG(J)     &kp LG(K)      &kp LG(L)         &kp LG(SEMI)   &none
 &none           &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)                                     &none      &none                                &kp LG(N)   &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)       &kp LG(FSLH)   &none
 &none           &none       &none       &none       &none                   &kp LG(BSPC)  &reset_mod_layer 1  &none      &none  &kp LG(ENTER)  &kp LG(SPACE)              &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none
             >;
@@ -1204,7 +1204,7 @@
             bindings = <
 &kp ESCAPE      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none                                                              &none          &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)        &kp LS(N0)     &none
 &kp LS(TAB)     &kp LS(Q)   &kp LS(W)   &kp LS(E)   &kp LS(R)   &kp LS(T)   &none                                                              &none          &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)         &kp LS(P)      &none
-&kp LS(ESCAPE)  &sk LCTRL   &sk LALT    &none       &sk LGUI    &kp LS(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)         &kp LS(SEMI)   &sl 6
+&kp LS(ESCAPE)  &sk LCTRL   &sk LALT    &none       &sk LGUI    &kp LS(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)         &kp LS(SEMI)   &none
 &none           &kp LS(Z)   &kp LS(X)   &kp LS(C)   &kp LS(V)   &kp LS(B)                                     &none      &none                                &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)       &kp LS(FSLH)   &none
 &none           &none       &none       &none       &none                   &kp LS(BSPC)  &reset_mod_layer 1  &none      &none  &kp LS(ENTER)  &kp LS(SPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP_ARROW)  &kp LS(RIGHT)  &none
             >;
@@ -1214,7 +1214,7 @@
             bindings = <
 &kp ESCAPE      &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &none                                                              &none          &kp LA(N6)  &kp LA(N7)    &kp LA(N8)     &kp LA(N9)        &kp LA(N0)     &none
 &kp LA(TAB)     &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &none                                                              &none          &kp LA(Y)   &kp LA(U)     &kp LA(I)      &kp LA(O)         &kp LA(P)      &none
-&kp LA(ESCAPE)  &sk LCTRL   &none       &sk LSHIFT  &sk LGUI    &kp LA(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LA(H)   &kp LA(J)     &kp LA(K)      &kp LA(L)         &kp LA(SEMI)   &sl 6
+&kp LA(ESCAPE)  &sk LCTRL   &none       &sk LSHIFT  &sk LGUI    &kp LA(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LA(H)   &kp LA(J)     &kp LA(K)      &kp LA(L)         &kp LA(SEMI)   &none
 &none           &kp LA(Z)   &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)                                     &none      &none                                &kp LA(N)   &kp LA(M)     &kp LA(COMMA)  &kp LA(DOT)       &kp LA(FSLH)   &none
 &none           &none       &none       &none       &none                   &kp LA(BSPC)  &reset_mod_layer 1  &none      &none  &kp LA(ENTER)  &kp LA(SPACE)              &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP_ARROW)  &kp LA(RIGHT)  &none
             >;
@@ -1224,7 +1224,7 @@
             bindings = <
 &kp ESCAPE      &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &none                                                              &none          &kp LC(N6)  &kp LC(N7)    &kp LC(N8)     &kp LC(N9)        &kp LC(N0)     &none
 &kp LC(TAB)     &kp LC(Q)   &kp LC(W)   &kp LC(E)   &kp LC(R)   &kp LC(T)   &none                                                              &none          &kp LC(Y)   &kp LC(U)     &kp LC(I)      &kp LC(O)         &kp LC(P)      &none
-&kp LC(ESCAPE)  &none       &sk LALT    &sk LSHIFT  &sk LGUI    &kp LC(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LC(H)   &kp LC(J)     &kp LC(K)      &kp LC(L)         &kp LC(SEMI)   &sl 6
+&kp LC(ESCAPE)  &none       &sk LALT    &sk LSHIFT  &sk LGUI    &kp LC(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp LC(H)   &kp LC(J)     &kp LC(K)      &kp LC(L)         &kp LC(SEMI)   &none
 &none           &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(B)                                     &none      &none                                &kp LC(N)   &kp LC(M)     &kp LC(COMMA)  &kp LC(DOT)       &kp LC(FSLH)   &none
 &none           &none       &none       &none       &none                   &kp LC(BSPC)  &reset_mod_layer 1  &none      &none  &kp LC(ENTER)  &kp LC(SPACE)              &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none
             >;
@@ -1232,11 +1232,11 @@
 
         MacModeR_GUI {
             bindings = <
-&kp ESCAPE   &kp RG(N1)  &kp RG(N2)  &kp RG(N3)  &kp RG(N4)  &kp RG(N5)  &none                                                              &none          &kp RG(N6)  &kp RG(N7)    &kp RG(N8)     &kp RG(N9)        &kp RG(N0)     &none
-&kp RG(TAB)  &kp RG(Q)   &kp RG(W)   &kp RG(E)   &kp RG(R)   &kp RG(T)   &none                                                              &none          &kp RG(Y)   &kp RG(U)     &kp RG(I)      &kp RG(O)         &kp RG(P)      &none
-&kp ESCAPE   &kp RG(A)   &kp RG(S)   &kp RG(D)   &kp RG(F)   &kp RG(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp RG(H)   &none         &sk RSHIFT     &sk RALT          &sk RCTRL      &kp F24
-&none        &kp RG(Z)   &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(B)                                     &none      &none                                &kp RG(N)   &kp RG(M)     &kp RG(COMMA)  &kp RG(DOT)       &kp RG(FSLH)   &none
-&none        &none       &none       &none       &none                   &kp RG(BSPC)  &reset_mod_layer 1  &none      &none  &kp RG(ENTER)  &kp RG(SPACE)              &kp RG(LEFT)  &kp RG(DOWN)   &kp RG(UP_ARROW)  &kp RG(RIGHT)  &none
+&kp ESCAPE      &kp RG(N1)  &kp RG(N2)  &kp RG(N3)  &kp RG(N4)  &kp RG(N5)  &none                                                              &none          &kp RG(N6)  &kp RG(N7)    &kp RG(N8)     &kp RG(N9)        &kp RG(N0)     &none
+&kp RG(TAB)     &kp RG(Q)   &kp RG(W)   &kp RG(E)   &kp RG(R)   &kp RG(T)   &none                                                              &none          &kp RG(Y)   &kp RG(U)     &kp RG(I)      &kp RG(O)         &kp RG(P)      &none
+&kp RG(ESCAPE)  &kp RG(A)   &kp RG(S)   &kp RG(D)   &kp RG(F)   &kp RG(G)   &none         &kp F24             &none      &none  &kp F24        &none          &kp RG(H)   &none         &sk RSHIFT     &sk RALT          &sk RCTRL      &none
+&none           &kp RG(Z)   &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(B)                                     &none      &none                                &kp RG(N)   &kp RG(M)     &kp RG(COMMA)  &kp RG(DOT)       &kp RG(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp RG(BSPC)  &reset_mod_layer 1  &none      &none  &kp RG(ENTER)  &kp RG(SPACE)              &kp RG(LEFT)  &kp RG(DOWN)   &kp RG(UP_ARROW)  &kp RG(RIGHT)  &none
             >;
         };
 
@@ -1312,21 +1312,101 @@
 
         WinBase {
             bindings = <
-&kp ESCAPE                          &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &layer_toggle_moment 23 16                                                                          &layer_toggle_moment 23 18  &kp N6  &kp N7    &kp N8     &kp N9      &kp N0                &kp MINUS
+&kp ESCAPE                          &kp N1     &kp N2     &kp N3     &kp N4     &kp N5  &layer_toggle_moment 31 24                                                                          &layer_toggle_moment 31 26  &kp N6  &kp N7    &kp N8     &kp N9      &kp N0                &kp MINUS
 &kp TAB                             &kp Q      &kp W      &kp E      &kp R      &kp T   &sk LS(LA(LG(LCTRL)))                                                                               &sk RS(RA(RG(RCTRL)))       &kp Y   &kp U     &kp I      &kp O       &kp P                 &kp NON_US_BACKSLASH
 &w_left_mod_alt_tab_layer 0 0       &kp A      &kp S      &kp D      &kp F      &kp G   &sk LS(LA(LCTRL))           &kp LCTRL         &kp LALT      &kp RGUI       &kp ESCAPE               &sk RS(RA(RCTRL))           &kp H   &kp J     &kp K      &kp L       &hmsr RGUI SEMICOLON  &sl 0
 &thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z      &kp X      &kp C      &kp V      &kp B                                                 &kp HOME      &kp PAGE_UP                                                         &kp N   &kp M     &kp COMMA  &kp PERIOD  &kp SLASH             &thumb_kp_sticky_key RSHIFT RSHIFT
-&none                               &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)          &thumb 17 BACKSPACE         &thumb 18 DELETE  &kp END       &kp PAGE_DOWN  &thumb_mod RSHIFT ENTER  &space 16 SPACE                     &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT             &none
+&none                               &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)          &thumb 25 BACKSPACE         &thumb 26 DELETE  &kp END       &kp PAGE_DOWN  &thumb_mod RSHIFT ENTER  &space 24 SPACE                     &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT             &none
             >;
         };
 
         WinMod {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                                 &none  &none  &none  &none  &none  &none      &none
-&none  &none  &none  &none  &none  &none  &none                                                 &none  &none  &none  &none  &none  &none      &none
-&none  &sl 5  &sl 4  &sl 3  &sl 2  &none  &none  &kp F24             &none      &none  &kp F24  &none  &none  &sl 6  &sl 7  &sl 8  &sl 9      &none
-&none  &none  &none  &none  &none  &none                             &none      &none                  &none  &none  &none  &none  &none      &none
-&none  &none  &none  &none  &none         &none  &reset_mod_layer 1  &none      &none  &none    &none         &none  &none  &none  &kp RIGHT  &none
+&none  &none   &none   &none   &none   &none  &none                                                  &none  &none  &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none  &none                                                  &none  &none  &none   &none   &none   &none   &none
+&none  &sl 19  &sl 18  &sl 17  &sl 16  &none  &none  &kp F24              &none      &none  &kp F24  &none  &none  &sl 20  &sl 21  &sl 22  &sl 23  &none
+&none  &none   &none   &none   &none   &none                              &none      &none                  &none  &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none          &none  &reset_mod_layer 14  &none      &none  &none    &none         &none   &none   &none   &none   &none
+            >;
+        };
+
+        WinModeL_LCTRL {
+            bindings = <
+&kp ESCAPE      &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)  &none                                                               &none          &kp LC(N6)  &kp LC(N7)    &kp LC(N8)     &kp LC(N9)        &kp LC(N0)     &none
+&kp LC(TAB)     &kp LC(Q)   &kp LC(W)   &kp LC(E)   &kp LC(R)   &kp LC(T)   &none                                                               &none          &kp LC(Y)   &kp LC(U)     &kp LC(I)      &kp LC(O)         &kp LC(P)      &none
+&kp LC(ESCAPE)  &sk LCMD    &sk LALT    &sk LSHIFT  &none       &kp LC(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp LC(H)   &kp LC(J)     &kp LC(K)      &kp LC(L)         &kp LC(SEMI)   &none
+&none           &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)   &kp LC(B)                                      &none      &none                                &kp LC(N)   &kp LC(M)     &kp LC(COMMA)  &kp LC(DOT)       &kp LC(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp LC(BSPC)  &reset_mod_layer 15  &none      &none  &kp LC(ENTER)  &kp LC(SPACE)              &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none
+            >;
+        };
+
+        WinModeL_LSHIFT {
+            bindings = <
+&kp ESCAPE      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none                                                               &none          &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)        &kp LS(N0)     &none
+&kp LS(TAB)     &kp LS(Q)   &kp LS(W)   &kp LS(E)   &kp LS(R)   &kp LS(T)   &none                                                               &none          &kp LS(Y)   &kp LS(U)     &kp LS(I)      &kp LS(O)         &kp LS(P)      &none
+&kp LS(ESCAPE)  &sk LCMD    &sk LALT    &none       &sk LCTRL   &kp LS(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp LS(H)   &kp LS(J)     &kp LS(K)      &kp LS(L)         &kp LS(SEMI)   &none
+&none           &kp LS(Z)   &kp LS(X)   &kp LS(C)   &kp LS(V)   &kp LS(B)                                      &none      &none                                &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)       &kp LS(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp LS(BSPC)  &reset_mod_layer 15  &none      &none  &kp LS(ENTER)  &kp LS(SPACE)              &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP_ARROW)  &kp LS(RIGHT)  &none
+            >;
+        };
+
+        WinModeL_LALT {
+            bindings = <
+&kp ESCAPE      &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &none                                                               &none          &kp LA(N6)  &kp LA(N7)    &kp LA(N8)     &kp LA(N9)        &kp LA(N0)     &none
+&kp LA(TAB)     &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &none                                                               &none          &kp LA(Y)   &kp LA(U)     &kp LA(I)      &kp LA(O)         &kp LA(P)      &none
+&kp LA(ESCAPE)  &sk LCMD    &none       &sk LSHIFT  &sk LCTRL   &kp LA(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp LA(H)   &kp LA(J)     &kp LA(K)      &kp LA(L)         &kp LA(SEMI)   &sl 6
+&none           &kp LA(Z)   &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)                                      &none      &none                                &kp LA(N)   &kp LA(M)     &kp LA(COMMA)  &kp LA(DOT)       &kp LA(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp LA(BSPC)  &reset_mod_layer 15  &none      &none  &kp LA(ENTER)  &kp LA(SPACE)              &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP_ARROW)  &kp LA(RIGHT)  &none
+            >;
+        };
+
+        WinModeL_LGUI {
+            bindings = <
+&kp ESCAPE      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none                                                               &none          &kp LG(N6)  &kp LG(N7)    &kp LG(N8)     &kp LG(N9)        &kp LG(N0)     &none
+&kp LG(TAB)     &kp LG(Q)   &kp LG(W)   &kp LG(E)   &kp LG(R)   &kp LG(T)   &none                                                               &none          &kp LG(Y)   &kp LG(U)     &kp LG(I)      &kp LG(O)         &kp LG(P)      &none
+&kp LG(ESCAPE)  &none       &sk LALT    &sk LSHFT   &sk LCTRL   &kp LG(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp LG(H)   &kp LG(J)     &kp LG(K)      &kp LG(L)         &kp LG(SEMI)   &none
+&none           &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)                                      &none      &none                                &kp LG(N)   &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)       &kp LG(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp LG(BSPC)  &reset_mod_layer 15  &none      &none  &kp LG(ENTER)  &kp LG(SPACE)              &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none
+            >;
+        };
+
+        WinModR_RCTRL {
+            bindings = <
+&kp ESCAPE      &kp RC(N1)  &kp RC(N2)  &kp RC(N3)  &kp RC(N4)  &kp RC(N5)  &none                                                               &none          &kp RC(N6)  &kp RC(N7)    &kp RC(N8)     &kp RC(N9)        &kp RC(N0)     &none
+&kp RC(TAB)     &kp RC(Q)   &kp RC(W)   &kp RC(E)   &kp RC(R)   &kp RC(T)   &none                                                               &none          &kp RC(Y)   &kp RC(U)     &kp RC(I)      &kp RC(O)         &kp RC(P)      &none
+&kp RC(ESCAPE)  &kp RC(A)   &kp RC(S)   &kp RC(D)   &kp RC(F)   &kp RC(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp RC(H)   &none         &sk RSHIFT     &sk RALT          &sk RMETA      &kp F24
+&none           &kp RC(Z)   &kp RC(X)   &kp RC(C)   &kp RC(V)   &kp RC(B)                                      &none      &none                                &kp RC(N)   &kp RC(M)     &kp RC(COMMA)  &kp RC(DOT)       &kp RC(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp RC(BSPC)  &reset_mod_layer 15  &none      &none  &kp RC(ENTER)  &kp RC(SPACE)              &kp RC(LEFT)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)  &none
+            >;
+        };
+
+        WinModR_RSHIFT {
+            bindings = <
+&kp ESCAPE      &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)  &none                                                               &none          &kp RS(N6)  &kp RS(N7)    &kp RS(N8)     &kp RS(N9)        &kp RS(N0)     &none
+&kp RS(TAB)     &kp RS(Q)   &kp RS(W)   &kp RS(E)   &kp RS(R)   &kp RS(T)   &none                                                               &none          &kp RS(Y)   &kp RS(U)     &kp RS(I)      &kp RS(O)         &kp RS(P)      &none
+&kp RS(ESCAPE)  &kp RS(A)   &kp RS(S)   &kp RS(D)   &kp RS(F)   &kp RS(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp RS(H)   &sk RCTRL     &none          &sk RALT          &sk RMETA      &none
+&none           &kp RS(Z)   &kp RS(X)   &kp RS(C)   &kp RS(V)   &kp RS(B)                                      &none      &none                                &kp RS(N)   &kp RS(M)     &kp RS(COMMA)  &kp RS(DOT)       &kp RS(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp RS(BSPC)  &reset_mod_layer 15  &none      &none  &kp RS(ENTER)  &kp RS(SPACE)              &kp RS(LEFT)  &kp RS(DOWN)   &kp RS(UP_ARROW)  &kp RS(RIGHT)  &none
+            >;
+        };
+
+        WinModR_RALT {
+            bindings = <
+&kp ESCAPE      &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)  &none                                                               &none          &kp RA(N6)  &kp RA(N7)    &kp RA(N8)     &kp RA(N9)        &kp RA(N0)     &none
+&kp RA(TAB)     &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)   &none                                                               &none          &kp RA(Y)   &kp RA(U)     &kp RA(I)      &kp RA(O)         &kp RA(P)      &none
+&kp RA(ESCAPE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp RA(H)   &sk RCTRL     &sk RSHIFT     &none             &sk RMETA      &none
+&none           &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)                                      &none      &none                                &kp RA(N)   &kp RA(M)     &kp RA(COMMA)  &kp RA(DOT)       &kp RA(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp RA(BSPC)  &reset_mod_layer 15  &none      &none  &kp RA(ENTER)  &kp RA(SPACE)              &kp RA(LEFT)  &kp RA(DOWN)   &kp RA(UP_ARROW)  &kp RA(RIGHT)  &none
+            >;
+        };
+
+        WinModR_RGUI {
+            bindings = <
+&kp ESCAPE      &kp RG(N1)  &kp RG(N2)  &kp RG(N3)  &kp RG(N4)  &kp RG(N5)  &none                                                               &none          &kp RG(N6)  &kp RG(N7)    &kp RG(N8)     &kp RG(N9)        &kp RG(N0)     &none
+&kp RG(TAB)     &kp RG(Q)   &kp RG(W)   &kp RG(E)   &kp RG(R)   &kp RG(T)   &none                                                               &none          &kp RG(Y)   &kp RG(U)     &kp RG(I)      &kp RG(O)         &kp RG(P)      &none
+&kp RG(ESCAPE)  &kp RG(A)   &kp RG(S)   &kp RG(D)   &kp RG(F)   &kp RG(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp RG(H)   &sk RCTRL     &sk RSHIFT     &sk RALT          &none          &none
+&none           &kp RG(Z)   &kp RG(X)   &kp RG(C)   &kp RG(V)   &kp RG(B)                                      &none      &none                                &kp RG(N)   &kp RG(M)     &kp RG(COMMA)  &kp RG(DOT)       &kp RG(FSLH)   &none
+&none           &none       &none       &none       &none                   &kp RG(BSPC)  &reset_mod_layer 15  &none      &none  &kp RG(ENTER)  &kp RG(SPACE)              &kp RG(LEFT)  &kp RG(DOWN)   &kp RG(UP_ARROW)  &kp RG(RIGHT)  &none
             >;
         };
 
@@ -1336,7 +1416,7 @@
 &none  &none            &kp HOME      &kp UP_ARROW   &kp END      &kp PAGE_UP    &kp LS(LA(LCTRL))                                            &kp RS(RA(RCTRL))      &none  &kp RS(F3)        &kp RC(F)         &kp F3            &none             &none
 &none  &kp LSHIFT       &kp LEFT      &kp DOWN       &kp RIGHT    &kp PAGE_DOWN  &kp LS(LA(LG(LCTRL)))  &to 14      &none      &none  &to 14  &kp RS(RA(RG(RCTRL)))  &none  &kp RCTRL         &kp RSHIFT        &kp RALT          &kp RGUI          &kp ENTER
 &none  &kp LC(LS(TAB))  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(TAB)  &none                                             &none      &none                                 &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
-&none  &kp LC(Z)        &kp LC(X)     &kp LC(C)      &kp LC(V)                   &thumb 17 BACKSPACE    &kp DELETE  &none      &none  &none   &kp SPACE                     &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(N7)        &kp LG(N8)        &none
+&none  &kp LC(Z)        &kp LC(X)     &kp LC(C)      &kp LC(V)                   &thumb 25 BACKSPACE    &kp DELETE  &none      &none  &none   &kp SPACE                     &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(N7)        &kp LG(N8)        &none
             >;
         };
 
@@ -1382,11 +1462,11 @@
 
         WinGaming {
             bindings = <
-&kp Y   &kp GRAVE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                              &mo 23         &kp NUMBER_6  &kp N7     &kp N8      &kp N9         &kp N0     &kp INSERT
+&kp Y   &kp GRAVE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                              &mo 31         &kp NUMBER_6  &kp N7     &kp N8      &kp N9         &kp N0     &kp INSERT
 &kp U   &kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T                                               &none          &kp Y         &kp U      &kp I       &kp O          &kp P      &kp DELETE
 &kp J   &kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G      &kp ESCAPE  &kp I      &none  &kp N0     &none          &none         &kp RCTRL  &kp RSHIFT  &kp RIGHT_ALT  &kp RMETA  &kp PRINTSCREEN
 &kp K   &kp H       &kp Z         &kp X         &kp C         &kp V                                &kp O      &none                            &kp N         &kp M      &kp COMMA   &kp DOT        &kp SLASH  &kp SCROLLLOCK
-&mo 22  &kp L       &kp B         &kp N         &kp M                       &kp SPACE  &kp LCTRL   &kp P      &none  &kp ENTER  &kp BACKSPACE                &kp LEFT   &kp DOWN    &kp UP_ARROW   &kp RIGHT  &kp PAUSE_BREAK
+&mo 30  &kp L       &kp B         &kp N         &kp M                       &kp SPACE  &kp LCTRL   &kp P      &none  &kp ENTER  &kp BACKSPACE                &kp LEFT   &kp DOWN    &kp UP_ARROW   &kp RIGHT  &kp PAUSE_BREAK
             >;
         };
 
@@ -1406,17 +1486,7 @@
 &none  &none         &none         &none         &none         &none         &bootloader                                                            &bootloader             &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none       &none  &none
 &none  &none         &none         &none         &none         &none         &none        &m_bt_profile  &w_bt_profile      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &kp K_PREV            &kp K_PLAY_PAUSE      &kp K_NEXT  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                                     &none              &none                                           &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_MUTE  &none  &none
-&none  &none         &none         &none         &none                       &to 0        &to 14         &to 21             &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC            &bl BL_DEC            &none       &none  &none
-            >;
-        };
-
-        WinModeL_LGUI {
-            bindings = <
-&kp ESCAPE      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none                                                               &none          &kp LG(N6)  &kp LG(N7)    &kp LG(N8)     &kp LG(N9)        &kp LG(N0)     &none
-&kp LG(TAB)     &kp LG(Q)   &kp LG(W)   &kp LG(E)   &kp LG(R)   &kp LG(T)   &none                                                               &none          &kp LG(Y)   &kp LG(U)     &kp LG(I)      &kp LG(O)         &kp LG(P)      &none
-&kp LG(ESCAPE)  &none       &sk LALT    &sk LSHFT   &sk LCTRL   &kp LG(G)   &none         &kp F24              &none      &none  &kp F24        &none          &kp LG(H)   &kp LG(J)     &kp LG(K)      &kp LG(L)         &kp LG(SEMI)   &none
-&none           &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(B)                                      &none      &none                                &kp LG(N)   &kp LG(M)     &kp LG(COMMA)  &kp LG(DOT)       &kp LG(FSLH)   &none
-&none           &none       &none       &none       &none                   &kp LG(BSPC)  &reset_mod_layer 15  &none      &none  &kp LG(ENTER)  &kp LG(SPACE)              &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none
+&none  &none         &none         &none         &none                       &to 0        &to 14         &to 29             &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC            &bl BL_DEC            &none       &none  &none
             >;
         };
     };
