@@ -268,6 +268,15 @@
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75 37 38 39 40 41 42 43 44 53 54 55 56 57 58 68 69 70 71 72 73 74 35 36 37 38 52 53 65 66 67 68 69 70 71 72 73>;
             hold-trigger-on-release;
         };
+
+        w_select_line_or_all: w_select_line_or_all {
+            compatible = "zmk,behavior-mod-morph";
+            label = "W_SELECT_LINE_OR_ALL";
+            bindings = <&w_select_line>, <&kp LS(A)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -1100,21 +1109,21 @@
 
         Mac_Fn_Sticky {
             bindings = <
-&none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &none                                                  &none  &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &kp INSERT
-&none  &none                 &none                 &none           &none             &none       &sk LS(LA(LG(LCTRL)))                                  &none  &none  &kp F7      &kp F8             &kp F9           &kp F12  &kp DELETE
-&none  &sk LCTRL             &sk LALT              &sk LSHIFT      &sk LGUI          &none       &sk LS(LA(LCTRL))      &to 0  &none      &none  &to 0  &none  &none  &kp F4      &kp F5             &kp F6           &kp F11  &kp PRINTSCREEN
-&none  &none                 &none                 &none           &none             &none                                     &none      &none                &none  &kp F1      &kp F2             &kp F3           &kp F10  &none
-&none  &none                 &none                 &none           &none                         &none                  &none  &none      &none  &none  &none         &none       &none              &none            &none    &none
+&none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &none                                                    &none    &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &kp INSERT
+&none  &none                 &none                 &none           &none             &none       &sk LS(LA(LG(LCTRL)))                                    &none    &none  &kp F7      &kp F8             &kp F9           &kp F12  &kp DELETE
+&none  &sk LCTRL             &sk LALT              &sk LSHIFT      &sk LGUI          &none       &sk LS(LA(LCTRL))      &to 0  &none      &none  &kp F12  &none    &none  &kp F4      &kp F5             &kp F6           &kp F11  &kp PRINTSCREEN
+&none  &none                 &none                 &none           &none             &none                                     &none      &none                    &none  &kp F1      &kp F2             &kp F3           &kp F10  &none
+&none  &none                 &none                 &none           &none                         &none                  &none  &none      &none  &kp F11  &kp F10         &none       &none              &none            &none    &none
             >;
         };
 
         Mac_Num_Sticky {
             bindings = <
-&none  &none      &none     &none       &none     &none  &none                                                    &none  &none  &none         &none         &none         &none  &none
-&none  &none      &none     &none       &none     &none  &sk LS(LA(LG(LCTRL)))                                    &none  &none  &kp N7        &kp N8        &kp N9        &none  &none
-&none  &sk LCTRL  &sk LALT  &sk LSHIFT  &sk LCMD  &none  &sk LS(LA(LCTRL))      &to 14  &none      &none  &to 14  &none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
-&none  &none      &none     &none       &none     &none                                 &none      &none                 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
-&to 0  &none      &none     &none       &none            &none                  &none   &none      &none  &none   &none         &none         &none         &none         &none  &none
+&none  &none      &none     &none       &none     &none  &none                                                    &none   &none  &none         &none         &none         &none  &none
+&none  &none      &none     &none       &none     &none  &sk LS(LA(LG(LCTRL)))                                    &none   &none  &kp N7        &kp N8        &kp N9        &none  &none
+&none  &sk LCTRL  &sk LALT  &sk LSHIFT  &sk LCMD  &none  &sk LS(LA(LCTRL))      &to 14  &none      &none  &to 14  &none   &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
+&none  &none      &none     &none       &none     &none                                 &none      &none                  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+&to 0  &none      &none     &none       &none            &none                  &none   &none      &none  &none   &kp N0         &none         &none         &none         &none  &none
             >;
         };
 
@@ -1240,21 +1249,21 @@
 
         Win_Fn_Sticky {
             bindings = <
-&none   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &none                                                    &none          &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &kp INSERT
-&none   &none                 &none                 &none           &none             &none       &sk LS(LA(LG(LCTRL)))                                    &none          &none  &kp F7      &kp F8             &kp F9           &kp F12  &kp DELETE
-&none   &sk LGUI              &sk LALT              &sk LSHIFT      &sk LCTRL         &none       &sk LS(LA(LCTRL))      &to 14  &none      &none  &to 14  &none          &none  &kp F4      &kp F5             &kp F6           &kp F11  &kp PRINTSCREEN
-&none   &none                 &none                 &none           &none             &none                                      &none      &none                         &none  &kp F1      &kp F2             &kp F3           &kp F10  &kp SCROLLLOCK
-&to 14  &none                 &none                 &none           &none                         &none                  &none   &none      &none  &none   &kp LA(LS(S))         &none       &none              &none            &none    &kp PAUSE_BREAK
+&none   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &none                                                     &none    &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &kp INSERT
+&none   &none                 &none                 &none           &none             &none       &sk LS(LA(LG(LCTRL)))                                     &none    &none  &kp F7      &kp F8             &kp F9           &kp F12  &kp DELETE
+&none   &sk LGUI              &sk LALT              &sk LSHIFT      &sk LCTRL         &none       &sk LS(LA(LCTRL))      &to 14  &none      &none  &kp F12  &none    &none  &kp F4      &kp F5             &kp F6           &kp F11  &kp PRINTSCREEN
+&none   &none                 &none                 &none           &none             &none                                      &none      &none                    &none  &kp F1      &kp F2             &kp F3           &kp F10  &kp SCROLLLOCK
+&to 14  &none                 &none                 &none           &none                         &none                  &none   &none      &none  &kp F11  &kp F12         &none       &none              &none            &none    &kp PAUSE_BREAK
             >;
         };
 
         Win_Num_Sticky {
             bindings = <
-&none   &none     &none     &none       &none      &none  &none                                                    &none  &none  &none         &none         &none         &none  &none
-&none   &none     &none     &none       &none      &none  &sk LS(LA(LG(LCTRL)))                                    &none  &none  &kp N7        &kp N8        &kp N9        &none  &none
-&none   &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &none  &sk LS(LA(LCTRL))      &to 14  &none      &none  &to 14  &none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
-&none   &none     &none     &none       &none      &none                                 &none      &none                 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
-&to 14  &none     &none     &none       &none             &none                  &none   &none      &none  &none   &none         &none         &none         &none         &none  &none
+&none   &none     &none     &none       &none      &none  &none                                                    &none   &none  &none         &none         &none         &none  &none
+&none   &none     &none     &none       &none      &none  &sk LS(LA(LG(LCTRL)))                                    &none   &none  &kp N7        &kp N8        &kp N9        &none  &none
+&none   &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &none  &sk LS(LA(LCTRL))      &to 14  &none      &none  &to 14  &none   &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
+&none   &none     &none     &none       &none      &none                                 &none      &none                  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+&to 14  &none     &none     &none       &none             &none                  &none   &none      &none  &none   &kp N0         &none         &none         &none         &none  &none
             >;
         };
 
