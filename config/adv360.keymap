@@ -478,27 +478,6 @@
             require-prior-idle-ms = <(-1)>;
         };
 
-        m_ctrl_space {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <29 70>;
-            layers = <0 10>;
-            timeout-ms = <80>;
-        };
-
-        m_command_space {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <32 70>;
-            timeout-ms = <80>;
-            layers = <0 10>;
-        };
-
-        w_ctrl_space {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <32 70>;
-            timeout-ms = <80>;
-            layers = <14 24>;
-        };
-
         m_lalt_lgui_space {
             bindings = <&kp LG(LA(SPACE))>;
             key-positions = <32 30 70>;
