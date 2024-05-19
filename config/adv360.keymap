@@ -364,30 +364,6 @@
             layers = <10>;
         };
 
-        m_delete_word_backward {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <65 32 31>;
-            timeout-ms = <50>;
-            layers = <0 10>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
-        m_delete_word_forward {
-            bindings = <&kp LA(DELETE)>;
-            key-positions = <66 32 31>;
-            timeout-ms = <50>;
-            layers = <0 10>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
-        m_delete_line {
-            bindings = <&m_delete_line>;
-            key-positions = <65 31 30>;
-            timeout-ms = <50>;
-            layers = <0 10>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
         w_paste_plain {
             bindings = <&kp LC(LA(V))>;
             key-positions = <63 64>;
@@ -416,22 +392,6 @@
             layers = <24>;
         };
 
-        w_delete_word_backward {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <65 32 31>;
-            timeout-ms = <50>;
-            layers = <14 24>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
-        w_delete_word_forward {
-            bindings = <&kp LC(DELETE)>;
-            key-positions = <66 32 31>;
-            timeout-ms = <50>;
-            layers = <14 24>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
         m_next_lang {
             bindings = <&m_next_lang>;
             key-positions = <60 61>;
@@ -444,14 +404,6 @@
             key-positions = <60 61>;
             timeout-ms = <50>;
             layers = <14>;
-        };
-
-        w_delete_line {
-            bindings = <&w_delete_line>;
-            key-positions = <65 31 30>;
-            timeout-ms = <50>;
-            layers = <14 24>;
-            require-prior-idle-ms = <(-1)>;
         };
 
         backspace_repeat {
@@ -483,20 +435,6 @@
             key-positions = <32 30 70>;
             timeout-ms = <110>;
             layers = <0 10>;
-        };
-
-        m_lshift_lgui_enter {
-            bindings = <&kp LG(LS(ENTER))>;
-            key-positions = <32 31 69>;
-            timeout-ms = <95>;
-            layers = <0 10>;
-        };
-
-        w_lshift_lctrl_enter {
-            bindings = <&kp LC(LS(ENTER))>;
-            key-positions = <32 31 69>;
-            timeout-ms = <95>;
-            layers = <14 24>;
         };
 
         caps_lock {
@@ -607,20 +545,6 @@
             layers = <0 14>;
         };
 
-        r_alt_one {
-            bindings = <&kp RA(NUMBER_1)>;
-            key-positions = <43 1>;
-            timeout-ms = <100>;
-            layers = <0 14>;
-        };
-
-        r_alt_2 {
-            bindings = <&kp RA(NUMBER_2)>;
-            key-positions = <43 2>;
-            timeout-ms = <100>;
-            layers = <0 14>;
-        };
-
         m_select_line_nav {
             bindings = <&m_select_line>;
             key-positions = <30 31 32>;
@@ -654,7 +578,7 @@
             bindings = <&kp N0>;
             key-positions = <55 56>;
             timeout-ms = <35>;
-            layers = <11 25>;
+            layers = <11 25 13 26>;
             require-prior-idle-ms = <(-1)>;
         };
 
@@ -700,18 +624,10 @@
 
         mac_mode_r {
             bindings = <&sl 1>;
-            key-positions = <42 43 44 45>;
+            key-positions = <42 43>;
             timeout-ms = <40>;
             require-prior-idle-ms = <(-1)>;
             layers = <0>;
-        };
-
-        win_fn_sticky {
-            bindings = <&sl 26>;
-            key-positions = <65 70>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <14>;
         };
 
         win_mod_l {
