@@ -273,7 +273,7 @@
         w_select_line_or_all: w_select_line_or_all {
             compatible = "zmk,behavior-mod-morph";
             label = "W_SELECT_LINE_OR_ALL";
-            bindings = <&w_select_line>, <&kp LS(A)>;
+            bindings = <&w_select_line>, <&kp LC(A)>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
