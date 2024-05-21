@@ -287,7 +287,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            hold-while-undecided-linger;
         };
 
         m_select_all_or_line: m_select_all_or_line {
@@ -647,7 +646,7 @@
         mac_mode_l {
             bindings = <&sl 1>;
             key-positions = <31 30>;
-            timeout-ms = <35>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <(-1)>;
             layers = <0>;
         };
@@ -655,7 +654,7 @@
         mac_mode_r {
             bindings = <&sl 1>;
             key-positions = <42 43>;
-            timeout-ms = <35>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <(-1)>;
             layers = <0>;
         };
@@ -663,7 +662,7 @@
         win_mod_l {
             bindings = <&sl 14>;
             key-positions = <31 30>;
-            timeout-ms = <35>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <(-1)>;
             layers = <13>;
         };
@@ -671,7 +670,7 @@
         win_mod_r {
             bindings = <&sl 14>;
             key-positions = <42 43>;
-            timeout-ms = <35>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <(-1)>;
             layers = <13>;
         };
