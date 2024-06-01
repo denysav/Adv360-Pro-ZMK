@@ -1083,7 +1083,7 @@
             >;
         };
 
-        MacModR_GUI {
+        MacModR_RGUI {
             bindings = <
 &kp ESCAPE      &kp RG(N1)  &kp RG(N2)  &kp RG(N3)  &kp RG(N4)  &kp RG(N5)  &none                                                          &none          &kp RG(N6)  &kp RG(N7)    &kp RG(N8)     &kp RG(N9)        &kp RG(N0)     &none
 &kp RG(TAB)     &kp RG(Q)   &kp RG(W)   &kp RG(E)   &kp RG(R)   &kp RG(T)   &none                                                          &none          &kp RG(Y)   &kp RG(U)     &kp RG(I)      &kp RG(O)         &kp RG(P)      &none
