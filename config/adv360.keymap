@@ -968,11 +968,11 @@
 
         MacNavigation {
             bindings = <
-&to 0  &none                  &kp LG(LEFT_BRACKET)  &kp LC(LS(TAB))       &kp LC(TAB)       &kp LG(RIGHT_BRACKET)  &none                                                       &none                  &none  &none          &none       &none          &none      &none
-&none  &none                  &kp LG(LEFT)          &kp UP_ARROW          &kp RG(RIGHT)     &kp PAGE_UP            &kp LS(LA(LCTRL))                                           &kp RS(RA(RCTRL))      &none  &kp RG(RS(G))  &kp RG(F)   &kp RG(G)      &none      &none
-&none  &m_select_all_or_line  &kp LEFT              &kp DOWN              &kp RIGHT         &kp PAGE_DOWN          &kp LS(LA(LG(LCTRL)))  &to 0       &none      &none  &to 0  &kp RS(RA(RG(RCTRL)))  &none  &kp RALT       &kp RSHIFT  &kp RIGHT_GUI  &kp RCTRL  &kp ENTER
-&none  &kp Z                  &kp X                 &kp C                 &kp V             &kp B                                                     &none      &none                                &none  &none          &none       &none          &none      &none
-&none  &kp_sk LCTRL LCTRL     &kp_sk LALT LALT      &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI                         &thumb 11 BACKSPACE    &kp DELETE  &none      &none  &none  &kp SPACE                     &kp LEFT       &kp DOWN    &kp UP_ARROW   &kp RIGHT  &none
+&kp LG(T)  &kp LG(W)              &kp LG(LEFT_BRACKET)  &kp LC(LS(TAB))       &kp LC(TAB)       &kp LG(RIGHT_BRACKET)  &none                                                       &none                  &none  &none          &none       &none          &none      &none
+&none      &none                  &kp LG(LEFT)          &kp UP_ARROW          &kp RG(RIGHT)     &kp PAGE_UP            &kp LS(LA(LCTRL))                                           &kp RS(RA(RCTRL))      &none  &kp RG(RS(G))  &kp RG(F)   &kp RG(G)      &none      &none
+&none      &m_select_all_or_line  &kp LEFT              &kp DOWN              &kp RIGHT         &kp PAGE_DOWN          &kp LS(LA(LG(LCTRL)))  &to 0       &none      &none  &to 0  &kp RS(RA(RG(RCTRL)))  &none  &kp RALT       &kp RSHIFT  &kp RIGHT_GUI  &kp RCTRL  &kp ENTER
+&none      &kp Z                  &kp X                 &kp C                 &kp V             &kp B                                                     &none      &none                                &none  &none          &none       &none          &none      &none
+&none      &kp_sk LCTRL LCTRL     &kp_sk LALT LALT      &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI                         &thumb 11 BACKSPACE    &kp DELETE  &none      &none  &none  &kp SPACE                     &kp LEFT       &kp DOWN    &kp UP_ARROW   &kp RIGHT  &none
             >;
         };
 
@@ -1098,11 +1098,11 @@
 
         WinNavigation {
             bindings = <
-&none  &none                  &none             &kp LC(TAB)           &kp LC(LS(TAB))     &none          &none                                                        &none                  &none  &none             &none             &none             &none             &none
-&none  &none                  &kp HOME          &kp UP_ARROW          &kp END             &kp PAGE_UP    &sk LS(LA(LG(LCTRL)))                                        &sk RS(RA(RG(RCTRL)))  &none  &kp RS(F3)        &kp RC(F)         &kp F3            &none             &none
-&none  &w_select_line_or_all  &kp LEFT          &kp DOWN              &kp RIGHT           &kp PAGE_DOWN  &sk LS(LA(LCTRL))      &to 13      &none      &none  &to 13  &sk RS(RA(RCTRL))      &none  &kp RCTRL         &kp RSHIFT        &kp RALT          &kp RGUI          &kp ENTER
-&none  &kp Z                  &kp X             &kp C                 &kp V               &kp B                                             &none      &none                                 &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
-&none  &kp_sk LGUI LGUI       &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL                 &thumb 24 BACKSPACE    &kp DELETE  &none      &none  &none   &kp SPACE                     &kp LEFT          &kp DOWN          &kp UP_ARROW      &kp RIGHT         &none
+&kp LC(T)  &kp LC(W)              &kp LA(LEFT)      &kp LC(TAB)           &kp LC(LS(TAB))     &kp LA(RIGHT)  &none                                                        &none                  &none  &none             &none             &none             &none             &none
+&none      &none                  &kp HOME          &kp UP_ARROW          &kp END             &kp PAGE_UP    &sk LS(LA(LG(LCTRL)))                                        &sk RS(RA(RG(RCTRL)))  &none  &kp RS(F3)        &kp RC(F)         &kp F3            &none             &none
+&none      &w_select_line_or_all  &kp LEFT          &kp DOWN              &kp RIGHT           &kp PAGE_DOWN  &sk LS(LA(LCTRL))      &to 13      &none      &none  &to 13  &sk RS(RA(RCTRL))      &none  &kp RCTRL         &kp RSHIFT        &kp RALT          &kp RGUI          &kp ENTER
+&none      &kp Z                  &kp X             &kp C                 &kp V               &kp B                                             &none      &none                                 &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
+&none      &kp_sk LGUI LGUI       &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL                 &thumb 24 BACKSPACE    &kp DELETE  &none      &none  &none   &kp SPACE                     &kp LEFT          &kp DOWN          &kp UP_ARROW      &kp RIGHT         &none
             >;
         };
 
