@@ -537,7 +537,7 @@
         m_paste {
             bindings = <&kp LG(V)>;
             key-positions = <64 50>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <(-1)>;
             layers = <0 10>;
         };
@@ -553,8 +553,8 @@
         w_paste {
             bindings = <&kp LC(V)>;
             key-positions = <64 50>;
-            layers = <13>;
-            timeout-ms = <50>;
+            layers = <13 23>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <(-1)>;
         };
     };
