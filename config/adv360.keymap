@@ -486,10 +486,10 @@
             require-prior-idle-ms = <(-1)>;
         };
 
-        mac_fn_sticky {
-            bindings = <&sl 12>;
+        mac_mod_sticky {
+            bindings = <&sl 1>;
             key-positions = <65 70>;
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0>;
             require-prior-idle-ms = <(-1)>;
         };
@@ -543,9 +543,9 @@
         };
 
         win_fn_sticky {
-            bindings = <&sl 25>;
+            bindings = <&sl 14>;
             key-positions = <65 70>;
-            timeout-ms = <50>;
+            timeout-ms = <81>;
             require-prior-idle-ms = <(-1)>;
             layers = <13>;
         };
@@ -1098,11 +1098,11 @@
 
         WinNavigation {
             bindings = <
-&kp LC(W)  &kp LA(LEFT_ARROW)     &kp LC(LS(TAB))   &kp LC(TAB)           &kp LA(LEFT_ARROW)  &kp LC(T)      &to 13                                                       &to 13                 &none  &none             &none             &none             &none             &none
-&none      &none                  &kp HOME          &kp UP_ARROW          &kp END             &kp PAGE_UP    &sk LS(LA(LG(LCTRL)))                                        &sk RS(RA(RG(RCTRL)))  &none  &kp RS(F3)        &kp RC(F)         &kp F3            &none             &none
-&none      &w_select_line_or_all  &kp LEFT          &kp DOWN              &kp RIGHT           &kp PAGE_DOWN  &sk LS(LA(LCTRL))      &to 13      &none      &none  &to 13  &sk RS(RA(RCTRL))      &none  &kp RCTRL         &kp RSHIFT        &kp RALT          &kp RGUI          &kp ENTER
-&none      &kp Z                  &kp X             &kp C                 &kp V               &kp B                                             &none      &none                                 &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
-&none      &kp_sk LGUI LGUI       &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL                 &thumb 24 BACKSPACE    &kp DELETE  &none      &none  &none   &kp SPACE                     &kp LEFT          &kp DOWN          &kp UP_ARROW      &kp RIGHT         &none
+&kp LC(W)  &kp LA(LEFT_ARROW)     &kp LC(LS(TAB))   &kp LC(TAB)           &kp LA(LEFT_ARROW)  &kp LC(T)      &to 13                                                       &to 13                 &none          &none             &none             &none             &none             &none
+&none      &none                  &kp HOME          &kp UP_ARROW          &kp END             &kp PAGE_UP    &sk LS(LA(LG(LCTRL)))                                        &sk RS(RA(RG(RCTRL)))  &none          &kp RS(F3)        &kp RC(F)         &kp F3            &none             &none
+&none      &w_select_line_or_all  &kp LEFT          &kp DOWN              &kp RIGHT           &kp PAGE_DOWN  &sk LS(LA(LCTRL))      &to 13      &none      &none  &to 13  &sk RS(RA(RCTRL))      &kp BACKSPACE  &kp RCTRL         &kp RSHIFT        &kp RALT          &kp RGUI          &kp ENTER
+&none      &kp Z                  &kp X             &kp C                 &kp V               &kp B                                             &none      &none                                 &none          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
+&none      &kp_sk LGUI LGUI       &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL                 &thumb 24 BACKSPACE    &kp DELETE  &none      &none  &none   &kp SPACE                             &kp LEFT          &kp DOWN          &kp UP_ARROW      &kp RIGHT         &none
             >;
         };
 
