@@ -498,7 +498,7 @@
         mac_mod_sticky {
             bindings = <&sl 1>;
             key-positions = <65 70>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             layers = <0>;
             require-prior-idle-ms = <(-1)>;
         };
@@ -554,7 +554,7 @@
         win_mod_sticky {
             bindings = <&sl 14>;
             key-positions = <65 70>;
-            timeout-ms = <81>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <(-1)>;
             layers = <13>;
         };
