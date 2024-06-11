@@ -307,6 +307,15 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        backspace_delete: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -542,7 +551,7 @@
             layers = <0 10>;
         };
 
-        win_fn_sticky {
+        win_mod_sticky {
             bindings = <&sl 14>;
             key-positions = <65 70>;
             timeout-ms = <81>;
@@ -558,11 +567,75 @@
             require-prior-idle-ms = <(-1)>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
+        mac_fn_sticky {
+            bindings = <&sl 12>;
             key-positions = <44 43>;
             timeout-ms = <75>;
             slow-release;
+            require-prior-idle-ms = <(-1)>;
+            layers = <0>;
+        };
+
+        win_fn_sticky {
+            bindings = <&sl 25>;
+            key-positions = <43 44>;
+            timeout-ms = <75>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <13>;
+        };
+
+        mac_redo {
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <35 36>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <0>;
+        };
+
+        mac_cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <36 52>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <0>;
+        };
+
+        mac_paste_plain {
+            bindings = <&kp LG(LC(V))>;
+            key-positions = <52 67>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <0>;
+        };
+
+        win_redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <35 36>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <13>;
+        };
+
+        win_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <36 52>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <13>;
+        };
+
+        win_paste_plain {
+            bindings = <&kp LC(LA(V))>;
+            key-positions = <67 52>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <13>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <50 51>;
+            timeout-ms = <75>;
             require-prior-idle-ms = <(-1)>;
             layers = <0 13>;
         };
@@ -877,11 +950,11 @@
 
         MacBase {
             bindings = <
-&none                               &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &layer_toggle_moment 29 10                                                                                          &layer_toggle_moment 29 12  &kp N6  &kp N7            &kp N8                &kp N9            &kp N0              &none
-&kp TAB                             &kp Q               &kp W             &kp E                 &kp R             &kp T   &sk LS(LA(LG(LCTRL)))                                                                                               &sk RS(RA(RG(RCTRL)))       &kp Y   &kp U             &kp I                 &kp O             &kp P               &none
-&sl 1                               &kp A               &kp S             &kp D                 &kp F             &kp G   &sk LS(LA(LCTRL))           &kp INSERT                &kp LSHIFT      &kp RS(RA(RG(F10)))  &kp ESCAPE               &sk RS(RA(RCTRL))           &kp H   &kp J             &kp K                 &kp L             &kp SEMICOLON       &sl 1
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z               &kp X             &kp C                 &kp V             &kp B                                                         &kp LALT        &kp RS(RA(RG(F11)))                                                       &kp N   &kp M             &kp COMMA             &kp DOT           &kp FSLH            &thumb_kp_sticky_key RSHIFT RSHIFT
-&sl 12                              &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 11 BACKSPACE         &thumb_mod LSHIFT DELETE  &kp LCMD        &kp RS(RA(RG(F12)))  &thumb_mod RSHIFT ENTER  &space 10 SPACE                     &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL  &sl 12
+&none                               &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &layer_toggle_moment 29 10                                                                                         &layer_toggle_moment 29 12  &kp N6  &kp N7            &kp N8                &kp N9            &kp N0              &none
+&kp TAB                             &kp Q               &kp W             &kp E                 &kp R             &kp T   &sk LS(LA(LG(LCTRL)))                                                                                              &sk RS(RA(RG(RCTRL)))       &kp Y   &kp U             &kp I                 &kp O             &kp P               &none
+&sl 1                               &kp A               &kp S             &kp D                 &kp F             &kp G   &sk LS(LA(LCTRL))           &kp INSERT                &kp LG(Z)      &kp RS(RA(RG(F10)))  &kp ESCAPE               &sk RS(RA(RCTRL))           &kp H   &kp J             &kp K                 &kp L             &kp SEMICOLON       &sl 1
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z               &kp X             &kp C                 &kp V             &kp B                                                         &kp LG(C)      &kp RS(RA(RG(F11)))                                                       &kp N   &kp M             &kp COMMA             &kp DOT           &kp FSLH            &thumb_kp_sticky_key RSHIFT RSHIFT
+&sl 12                              &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 11 BACKSPACE         &thumb_mod LSHIFT DELETE  &kp LG(V)      &kp RS(RA(RG(F12)))  &thumb_mod RSHIFT ENTER  &space 10 SPACE                     &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL  &sl 12
             >;
         };
 
@@ -987,11 +1060,11 @@
 
         MacSymbols {
             bindings = <
-&kp GRAVE         &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp COMMA      &none                                                    &none                 &none          &none               &none           &none               &none                 &kp BACKSLASH
-&kp EXCLAMATION   &kp LEFT_BRACE     &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE   &kp QUESTION   &kp AT                                                   &none                 &none          &kp N7              &kp N8          &kp N9              &kp MINUS             &kp TAB
-&kp POUND         &hml LCTRL CARET   &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp PERCENT  &none  &none      &kp BACKSLASH  &kp N0     &none                 &kp BACKSPACE  &hmr RGUI NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
-&kp COLON         &kp LESS_THAN      &kp PIPE              &kp MINUS               &kp GREATER_THAN  &kp KP_DIVIDE                      &none      &kp DOT                                         &none          &kp NUMBER_1        &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE             &kp AMPS                &kp PLUS                         &trans       &none  &none      &kp COMMA      &kp ENTER  &non_repeat_kp SPACE                 &kp N0              &kp PLUS        &kp MINUS           &kp RIGHT             &none
+&kp GRAVE         &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp COMMA      &none                                                    &none                 &none              &none               &none           &none               &none                 &kp BACKSLASH
+&kp EXCLAMATION   &kp LEFT_BRACE     &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE   &kp QUESTION   &kp AT                                                   &none                 &none              &kp N7              &kp N8          &kp N9              &kp MINUS             &kp TAB
+&kp POUND         &hml LCTRL CARET   &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp PERCENT  &none  &none      &kp BACKSLASH  &kp N0     &none                 &backspace_delete  &hmr RGUI NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
+&kp COLON         &kp LESS_THAN      &kp PIPE              &kp MINUS               &kp GREATER_THAN  &kp KP_DIVIDE                      &none      &kp DOT                                         &none              &kp NUMBER_1        &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE             &kp AMPS                &kp PLUS                         &trans       &none  &none      &kp COMMA      &kp ENTER  &non_repeat_kp SPACE                     &kp N0              &kp PLUS        &kp MINUS           &kp RIGHT             &none
             >;
         };
 
@@ -1007,11 +1080,11 @@
 
         WinBase {
             bindings = <
-&none                               &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &layer_toggle_moment 29 23                                                                                          &layer_toggle_moment 29 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0            &none
-&kp TAB                             &kp Q             &kp W             &kp E                 &kp R               &kp T   &sk LS(LA(LG(LCTRL)))                                                                                               &sk RS(RA(RG(RCTRL)))      &kp Y   &kp U               &kp I                 &kp O             &kp P             &none
-&sl 14                              &kp A             &kp S             &kp D                 &kp F               &kp G   &sk LS(LA(LCTRL))           &kp INS                   &kp LSHIFT      &kp RC(RS(RA(F10)))  &kp ESCAPE               &sk RS(RA(RCTRL))          &kp H   &kp J               &kp K                 &kp L             &kp SEMICOLON     &sl 14
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z             &kp X             &kp C                 &kp V               &kp B                                                         &kp LALT        &kp RA(RC(RS(F11)))                                                      &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH         &thumb_kp_sticky_key RSHIFT RSHIFT
-&sl 25                              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 24 BACKSPACE         &thumb_mod LSHIFT DELETE  &kp LCTRL       &kp RS(RA(RC(F12)))  &thumb_mod RSHIFT ENTER  &space 23 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &sl 25
+&none                               &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &layer_toggle_moment 29 23                                                                                         &layer_toggle_moment 29 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0            &none
+&kp TAB                             &kp Q             &kp W             &kp E                 &kp R               &kp T   &sk LS(LA(LG(LCTRL)))                                                                                              &sk RS(RA(RG(RCTRL)))      &kp Y   &kp U               &kp I                 &kp O             &kp P             &none
+&sl 14                              &kp A             &kp S             &kp D                 &kp F               &kp G   &sk LS(LA(LCTRL))           &kp INS                   &kp LC(Z)      &kp RC(RS(RA(F10)))  &kp ESCAPE               &sk RS(RA(RCTRL))          &kp H   &kp J               &kp K                 &kp L             &kp SEMICOLON     &sl 14
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z             &kp X             &kp C                 &kp V               &kp B                                                         &kp LC(C)      &kp RA(RC(RS(F11)))                                                      &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH         &thumb_kp_sticky_key RSHIFT RSHIFT
+&sl 25                              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 24 BACKSPACE         &thumb_mod LSHIFT DELETE  &kp LC(V)      &kp RS(RA(RC(F12)))  &thumb_mod RSHIFT ENTER  &space 23 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &sl 25
             >;
         };
 
@@ -1117,11 +1190,11 @@
 
         WinSymbols {
             bindings = <
-&kp GRAVE         &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON      &kp COMMA     &none                                                        &none                 &none          &none                &none           &none               &none                 &kp BACKSLASH
-&kp EXCL          &kp LEFT_BRACE     &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE    &kp QUESTION  &kp AT                                                       &none                 &none          &kp N7               &kp N8          &kp N9              &none                 &kp TAB
-&kp HASH          &hml LGUI CARET    &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LCTRL DOLLAR  &kp ASTERISK  &kp PERCENT  &trans  &trans        &kp BACKSLASH  &kp N0     &none                 &kp BACKSPACE  &hmr RCTRL NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
-&kp COLON         &kp LESS_THAN      &kp PIPE              &kp MINUS               &kp GREATER_THAN   &kp SLASH                          &kp HOME      &kp DOT                                         &none          &kp NUMBER_1         &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE             &kp AMPS                &kp KP_PLUS                      &kp SPACE    &trans  &kp END       &kp COMMA      &kp ENTER  &non_repeat_kp SPACE                 &kp N0               &kp PLUS        &kp MINUS           &kp RIGHT             &none
+&kp GRAVE         &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON      &kp COMMA     &none                                                        &none                 &none              &none                &none           &none               &none                 &kp BACKSLASH
+&kp EXCL          &kp LEFT_BRACE     &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE    &kp QUESTION  &kp AT                                                       &none                 &none              &kp N7               &kp N8          &kp N9              &none                 &kp TAB
+&kp HASH          &hml LGUI CARET    &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LCTRL DOLLAR  &kp ASTERISK  &kp PERCENT  &trans  &trans        &kp BACKSLASH  &kp N0     &none                 &backspace_delete  &hmr RCTRL NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
+&kp COLON         &kp LESS_THAN      &kp PIPE              &kp MINUS               &kp GREATER_THAN   &kp SLASH                          &kp HOME      &kp DOT                                         &none              &kp NUMBER_1         &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE             &kp AMPS                &kp KP_PLUS                      &kp SPACE    &trans  &kp END       &kp COMMA      &kp ENTER  &non_repeat_kp SPACE                     &kp N0               &kp PLUS        &kp MINUS           &kp RIGHT             &none
             >;
         };
 
