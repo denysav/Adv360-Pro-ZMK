@@ -944,11 +944,11 @@
 
         MacBase_Right_On_Left {
             bindings = <
-&none                               &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &layer_toggle_moment 31 11                                                         &none  &none  &none  &none  &none  &none  &none
-&kp TAB                             &kp Q               &kp W             &kp E                 &kp R             &kp T   &sk LS(LA(LG(LCTRL)))                                                              &none  &none  &none  &none  &none  &none  &none
-&sl 2                               &kp A               &kp S             &kp D                 &kp F             &kp G   &sk LS(LA(LCTRL))           &kp INSERT                &kp LG(Z)      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z               &kp X             &kp C                 &kp V             &kp B                                                         &kp LG(C)      &none                &none  &none  &none  &none  &none  &none
-&sl 13                              &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 12 BACKSPACE         &thumb_mod LSHIFT DELETE  &kp LG(V)      &none  &none  &none         &none  &none  &none  &none  &none
+&none                               &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &layer_toggle_moment 31 11                                                        &none  &none  &none  &none  &none  &none  &none
+&kp TAB                             &kp Q               &kp W             &kp E                 &kp R             &kp T   &sk LS(LA(LG(LCTRL)))                                                             &none  &none  &none  &none  &none  &none  &none
+&sl 2                               &kp A               &kp S             &kp D                 &kp F             &kp G   &sk LS(LA(LCTRL))           &kp INSERT               &kp LG(Z)      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z               &kp X             &kp C                 &kp V             &kp B                                                        &kp LG(C)      &none                &none  &none  &none  &none  &none  &none
+&sl 13                              &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &space 11 SPACE             &thumb_mod LSHIFT ENTER  &kp LG(V)      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -1084,11 +1084,11 @@
 
         WinBase_Right_On_Left {
             bindings = <
-&none                               &kp N6            &kp N7            &kp N8                &kp N9              &kp N0    &layer_toggle_moment 31 25                                                         &none  &none  &none  &none  &none  &none  &none
-&kp TAB                             &kp Y             &kp U             &kp I                 &kp O               &kp P     &sk LS(LA(LG(LCTRL)))                                                              &none  &none  &none  &none  &none  &none  &none
-&sl 16                              &kp H             &kp J             &kp K                 &kp L               &kp SEMI  &sk LS(LA(LCTRL))           &kp ESC                   &kp LC(Z)      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp N             &kp M             &kp COMMA             &kp DOT             &kp FSLH                                                        &kp LC(C)      &none                &none  &none  &none  &none  &none  &none
-&sl 27                              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL            &thumb 26 BACKSPACE         &thumb_mod LSHIFT DELETE  &kp LC(V)      &none  &none  &none         &none  &none  &none  &none  &none
+&none                               &kp N6            &kp N7            &kp N8                &kp N9              &kp N0    &layer_toggle_moment 31 25                                                        &none  &none  &none  &none  &none  &none  &none
+&kp TAB                             &kp Y             &kp U             &kp I                 &kp O               &kp P     &sk LS(LA(LG(LCTRL)))                                                             &none  &none  &none  &none  &none  &none  &none
+&sl 16                              &kp H             &kp J             &kp K                 &kp L               &kp SEMI  &sk LS(LA(LCTRL))           &kp ESC                  &kp LC(Z)      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp N             &kp M             &kp COMMA             &kp DOT             &kp FSLH                                                       &kp LC(C)      &none                &none  &none  &none  &none  &none  &none
+&sl 27                              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL            &space 25 SPACE             &thumb_mod LSHIFT ENTER  &kp LC(V)      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
