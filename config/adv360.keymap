@@ -1003,6 +1003,8 @@
                 <&mo 26>;
 
             label = "W_LGUI_NAV";
+            wait-ms = <50>;
+            tap-ms = <50>;
         };
 
         w_lgui_lctrl_lalt_nav: w_lgui_lctrl_lalt_nav {
@@ -1020,6 +1022,8 @@
                 <&mo 26>;
 
             label = "W_LGUI_LCTRL_LALT_NAV";
+            wait-ms = <50>;
+            tap-ms = <50>;
         };
     };
 
