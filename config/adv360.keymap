@@ -992,14 +992,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 26>,
+                <&mo 25>,
                 <&macro_press>,
                 <&kp LGUI>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LGUI>,
                 <&macro_release>,
-                <&mo 26>;
+                <&mo 25>;
 
             label = "W_LGUI_NAV";
             wait-ms = <50>;
@@ -1011,14 +1011,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 26>,
+                <&mo 25>,
                 <&macro_press>,
                 <&kp LA(LC(LGUI))>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LGUI>,
+                <&kp LA(LC(LGUI))>,
                 <&macro_release>,
-                <&mo 26>;
+                <&mo 25>;
 
             label = "W_LGUI_LCTRL_LALT_NAV";
             wait-ms = <50>;
