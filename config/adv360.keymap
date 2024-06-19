@@ -980,8 +980,7 @@
                 <&macro_release>,
                 <&mo 28>,
                 <&macro_tap>,
-                <&kp ENTER>,
-                <&macro_press>;
+                <&kp ENTER>;
 
             label = "WIN_ALT_TAB_WITH_RELEASE";
             wait-ms = <50>;
