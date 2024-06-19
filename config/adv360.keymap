@@ -969,6 +969,40 @@
             wait-ms = <50>;
             tap-ms = <50>;
         };
+
+        w_lgui_nav: w_lgui_nav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 26>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_release>,
+                <&mo 26>;
+
+            label = "W_LGUI_NAV";
+        };
+
+        w_lgui_lctrl_lalt_nav: w_lgui_lctrl_lalt_nav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 26>,
+                <&macro_press>,
+                <&kp LA(LC(LGUI))>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_release>,
+                <&mo 26>;
+
+            label = "W_LGUI_LCTRL_LALT_NAV";
+        };
     };
 
     keymap {
