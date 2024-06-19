@@ -966,8 +966,8 @@
                 <&macro_press>;
 
             label = "WIN_ALT_TAB_WITH_RELEASE";
-            wait-ms = <35>;
-            tap-ms = <35>;
+            wait-ms = <50>;
+            tap-ms = <50>;
         };
     };
 
