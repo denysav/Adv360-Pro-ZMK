@@ -954,18 +954,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LC(LA(TAB))>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&kp LC(LA(TAB))>,
                 <&macro_press>,
                 <&mo 28>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 28>,
-                <&macro_press>,
-                <&kp ENTER>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&kp ENTER>;
 
             label = "WIN_ALT_TAB_WITH_RELEASE";
