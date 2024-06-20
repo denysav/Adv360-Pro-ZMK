@@ -404,7 +404,7 @@
         };
 
         w_alt_tab {
-            bindings = <&w_alt_tab_layer>;
+            bindings = <&win_alt_tab_with_release>;
             key-positions = <31 32>;
             timeout-ms = <35>;
             layers = <14 25>;
@@ -1051,11 +1051,11 @@
 
         MacMod {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                      &none  &none  &none  &none  &none  &none   &none
-&none  &none  &none  &none  &none  &none  &none                                      &none  &none  &none  &none  &none  &none   &none
-&none  &sl 6  &sl 5  &sl 4  &sl 3  &none  &none  &kp F24  &none      &none  &kp F24  &none  &none  &sl 7  &sl 8  &sl 9  &sl 10  &none
-&none  &none  &none  &none  &none  &none                  &none      &none                  &none  &none  &none  &none  &none   &none
-&none  &none  &none  &none  &none         &none  &kp F24  &none      &none  &none    &none         &none  &none  &none  &none   &none
+&none  &none  &none  &none  &none  &none  &none                                       &none  &none  &none  &none  &none  &none   &none
+&none  &none  &none  &none  &none  &none  &none                                       &none  &none  &none  &none  &none  &none   &none
+&none  &sl 6  &sl 5  &sl 4  &sl 3  &none  &none   &kp F24  &none      &none  &kp F24  &none  &none  &sl 7  &sl 8  &sl 9  &sl 10  &none
+&none  &none  &none  &none  &none  &none                   &none      &none                  &none  &none  &none  &none  &none   &none
+&none  &none  &none  &none  &none         &sl 13  &kp F24  &none      &none  &none    &none         &none  &none  &none  &none   &none
             >;
         };
 
@@ -1191,11 +1191,11 @@
 
         WinMod {
             bindings = <
-&none  &none   &none   &none   &none   &none  &none                                      &none  &none  &none   &none   &none   &none   &none
-&none  &none   &none   &none   &none   &none  &none                                      &none  &none  &none   &none   &none   &none   &none
-&none  &sl 20  &sl 19  &sl 18  &sl 17  &none  &none  &kp F24  &none      &none  &kp F24  &none  &none  &sl 21  &sl 22  &sl 23  &sl 24  &none
-&none  &none   &none   &none   &none   &none                  &none      &none                  &none  &none   &none   &none   &none   &none
-&none  &none   &none   &none   &none          &none  &kp F24  &none      &none  &none    &none         &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none  &none                                       &none  &none  &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none  &none                                       &none  &none  &none   &none   &none   &none   &none
+&none  &sl 20  &sl 19  &sl 18  &sl 17  &none  &none   &kp F24  &none      &none  &kp F24  &none  &none  &sl 21  &sl 22  &sl 23  &sl 24  &none
+&none  &none   &none   &none   &none   &none                   &none      &none                  &none  &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none          &sl 27  &kp F24  &none      &none  &none    &none         &none   &none   &none   &none   &none
             >;
         };
 
@@ -1311,11 +1311,11 @@
 
         shift_tab_tab {
             bindings = <
-&none  &none  &none     &none         &none      &none  &none                                                &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none     &kp UP_ARROW  &none      &none  &none                                                &none    &none  &none  &none  &none  &none  &none
-&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &none        &none    &none      &none  &none        &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none         &none      &none                        &none      &none                        &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none         &none             &kp LS(TAB)  &kp TAB  &none      &none  &kp RS(TAB)  &kp TAB         &none  &none  &none  &none  &none
+&none  &none  &none     &none         &none      &none  &none                                                &none    &none  &none     &none           &none      &none  &none
+&none  &none  &none     &kp UP_ARROW  &none      &none  &none                                                &none    &none  &none     &kp UP_ARROW    &none      &none  &none
+&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &none        &none    &none      &none  &none        &none    &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &none
+&none  &none  &none     &none         &none      &none                        &none      &none                        &none  &none     &none           &none      &none  &none
+&none  &none  &none     &none         &none             &kp LS(TAB)  &kp TAB  &none      &none  &kp RS(TAB)  &kp TAB         &none     &none           &none      &none  &none
             >;
         };
 
