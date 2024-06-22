@@ -334,6 +334,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        balanced_kp: balanced_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BALANCED_KP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -1031,11 +1041,11 @@
 
         MacBase {
             bindings = <
-&kp GRAVE                           &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &layer_toggle_moment 31 11                                                                                                                                 &layer_toggle_moment 31 13  &kp N6  &kp N7            &kp N8                &kp N9            &kp N0              &kp DOUBLE_QUOTES
-&kp TAB                             &kp Q               &kp W             &kp E                 &kp R             &kp T   &sk LS(LA(LG(LCTRL)))                                                                                                                                      &sk RS(RA(RG(RCTRL)))       &kp Y   &kp U             &kp I                 &kp O             &kp P               &kp BACKSLASH
-&sl 2                               &kp A               &kp S             &kp D                 &kp F             &kp G   &sk LS(LA(LCTRL))           &kp INSERT                        &kp LG(LA(LS(UP_ARROW)))      &kp RS(RA(RG(F10)))  &kp ESCAPE                                &sk RS(RA(RCTRL))           &kp H   &kp J             &kp K                 &kp L             &kp SEMICOLON       &sl 2
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z               &kp X             &kp C                 &kp V             &kp B                                                                 &kp LG(LS(LA(RIGHT)))         &kp RS(RA(RG(F11)))                                                                        &kp N   &kp M             &kp COMMA             &kp DOT           &kp FSLH            &thumb_kp_sticky_key RSHIFT RSHIFT
-&sl 1                               &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 12 BACKSPACE         &thumb_mod LA(LC(LSHIFT)) DELETE  &kp LS(LA(LG(LEFT)))          &kp RS(RA(RG(F12)))  &thumb_mod RA(RC(RG(RIGHT_SHIFT))) ENTER  &space 11 SPACE                     &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL  &sl 13
+&kp GRAVE                           &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &layer_toggle_moment 31 11                                                                                                                                 &layer_toggle_moment 31 13  &kp N6  &kp N7            &kp N8                &kp N9            &kp N0                           &kp DOUBLE_QUOTES
+&kp TAB                             &kp Q               &kp W             &kp E                 &kp R             &kp T   &sk LS(LA(LG(LCTRL)))                                                                                                                                      &sk RS(RA(RG(RCTRL)))       &kp Y   &kp U             &kp I                 &kp O             &kp P                            &kp BACKSLASH
+&sl 2                               &kp A               &kp S             &kp D                 &kp F             &kp G   &sk LS(LA(LCTRL))           &kp INSERT                        &kp LG(LA(LS(UP_ARROW)))      &kp RS(RA(RG(F10)))  &kp ESCAPE                                &sk RS(RA(RCTRL))           &kp H   &kp J             &kp K                 &kp L             &balanced_kp CAPSLOCK SEMICOLON  &sl 2
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z               &kp X             &kp C                 &kp V             &kp B                                                                 &kp LG(LS(LA(RIGHT)))         &kp RS(RA(RG(F11)))                                                                        &kp N   &kp M             &kp COMMA             &kp DOT           &kp FSLH                         &thumb_kp_sticky_key RSHIFT RSHIFT
+&sl 1                               &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 12 BACKSPACE         &thumb_mod LA(LC(LSHIFT)) DELETE  &kp LS(LA(LG(LEFT)))          &kp RS(RA(RG(F12)))  &thumb_mod RA(RC(RG(RIGHT_SHIFT))) ENTER  &space 11 SPACE                     &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL               &sl 13
             >;
         };
 
