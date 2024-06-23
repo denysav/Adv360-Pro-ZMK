@@ -314,7 +314,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LGUI)>;
         };
 
         w_with_lgui_nav: w_with_lgui_nav {
@@ -1202,7 +1202,7 @@
             bindings = <
 &kp GRAVE         &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp COMMA      &none                                                                                   &none                 &none              &none               &none           &none               &none                 &kp BACKSLASH
 &kp EXCLAMATION   &kp LEFT_BRACE     &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE   &kp QUESTION   &kp AT                                                                                  &none                 &none              &kp N7              &kp N8          &kp N9              &kp MINUS             &kp TAB
-&kp POUND         &hml LCTRL CARET   &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp PERCENT  &none  &none      &kp BACKSLASH  &kp N0                                    &none                 &backspace_delete  &hmr RGUI NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
+&kp POUND         &hml LCTRL CARET   &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp PERCENT  &none  &none      &kp BACKSLASH  &kp N0                                    &none                 &backspace_delete  &hmr RGUI NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp ENTER
 &kp COLON         &kp LESS_THAN      &kp PIPE              &kp MINUS               &kp GREATER_THAN  &kp KP_DIVIDE                      &none      &kp DOT                                                                        &none              &kp NUMBER_1        &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE             &kp AMPS                &kp PLUS                         &trans       &none  &none      &kp COMMA      &thumb_mod RA(RC(RG(RIGHT_SHIFT))) ENTER  &non_repeat_kp SPACE                     &kp N0              &kp PLUS        &kp MINUS           &kp RIGHT             &none
             >;
