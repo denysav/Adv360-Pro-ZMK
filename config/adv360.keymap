@@ -1082,6 +1082,22 @@
             wait-ms = <20>;
             tap-ms = <20>;
         };
+
+        mac_home: mac_mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_tap>, <&kp LS(LA(LC(LG(F11))))>;
+
+            label = "MAC_MODE";
+        };
+
+        citadel: citadel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 14>, <&macro_tap>, <&kp LS(LA(LC(LG(F12))))>;
+
+            label = "CITADEL";
+        };
     };
 
     keymap {
@@ -1399,11 +1415,11 @@
 
         Mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                  &none                   &none  &none                 &none                 &none       &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                                            &bootloader             &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none       &none  &none
-&none  &none         &none         &none         &none         &none         &none        &m_bt_profile  &w_bt_profile      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &kp K_PREV            &kp K_PLAY_PAUSE      &kp K_NEXT  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                                     &none              &none                                           &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_MUTE  &none  &none
-&none  &none         &none         &none         &none                       &to 0        &to 14         &to 29             &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC            &bl BL_DEC            &none       &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                         &none                   &none  &none                 &none                 &none       &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                                   &bootloader             &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none       &none  &none
+&none  &none         &none         &none         &none         &none         &none        &mac_home  &citadel      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &kp K_PREV            &kp K_PLAY_PAUSE      &kp K_NEXT  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                                 &none         &none                                           &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_MUTE  &none  &none
+&none  &none         &none         &none         &none                       &to 0        &to 14     &to 29        &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC            &bl BL_DEC            &none       &none  &none
             >;
         };
     };
