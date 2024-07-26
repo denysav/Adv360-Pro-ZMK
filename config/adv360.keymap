@@ -1088,7 +1088,9 @@
                 <&macro_release>,
                 <&kp RSHIFT>,
                 <&macro_release>,
-                <&kp RCTRL>;
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp SPACE>;
 
             label = "M_ALT_TAB_CUSTOM";
             wait-ms = <20>;
@@ -1420,9 +1422,9 @@
         shift_tab_tab {
             bindings = <
 &none  &none  &none     &none         &none      &none  &none                                                &none    &none  &none     &none           &none      &none  &none
-&none  &none  &none     &kp UP_ARROW  &none      &none  &none                                                &none    &none  &none     &kp UP_ARROW    &none      &none  &none
-&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &none        &none    &none      &none  &none        &none    &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &none
-&none  &none  &none     &none         &none      &none                        &none      &none                        &none  &none     &none           &none      &none  &none
+&none  &kp Q  &kp W     &kp UP_ARROW  &none      &none  &none                                                &none    &none  &none     &kp UP_ARROW    &none      &none  &none
+&none  &none  &kp LEFT  &kp DOWN      &kp RIGHT  &kp G  &none        &none    &none      &none  &kp ESCAPE   &none    &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &none
+&none  &none  &kp X     &none         &none      &none                        &none      &none                        &none  &none     &none           &none      &none  &none
 &none  &none  &none     &none         &none             &kp LS(TAB)  &kp TAB  &none      &none  &kp RS(TAB)  &kp TAB         &none     &none           &none      &none  &none
             >;
         };
