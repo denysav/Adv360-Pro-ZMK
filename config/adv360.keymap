@@ -658,7 +658,7 @@
             key-positions = <41 42>;
             timeout-ms = <50>;
             require-prior-idle-ms = <(-1)>;
-            layers = <0>;
+            layers = <14>;
         };
     };
 
@@ -1041,7 +1041,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RGUI>,
+                <&kp RIGHT_CONTROL>,
                 <&macro_press>,
                 <&kp RSHIFT>,
                 <&macro_press>,
@@ -1056,7 +1056,7 @@
                 <&macro_release>,
                 <&kp RSHIFT>,
                 <&macro_release>,
-                <&kp RGUI>;
+                <&kp RIGHT_CONTROL>;
 
             label = "M_PREV_DESKTOP_LAYER";
             wait-ms = <20>;
@@ -1072,6 +1072,8 @@
                 <&kp RSHIFT>,
                 <&macro_press>,
                 <&kp RALT>,
+                <&macro_press>,
+                <&kp RIGHT_COMMAND>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_press>,
@@ -1081,6 +1083,8 @@
                 <&mo 28>,
                 <&macro_release>,
                 <&kp RALT>,
+                <&macro_release>,
+                <&kp RIGHT_COMMAND>,
                 <&macro_release>,
                 <&kp RSHIFT>,
                 <&macro_release>,
