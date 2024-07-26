@@ -639,7 +639,7 @@
 
         w_alt_tab_arrows {
             bindings = <&win_alt_tab_with_release>;
-            key-positions = <43 44>;
+            key-positions = <43 42>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
             layers = <14>;
@@ -647,7 +647,7 @@
 
         m_alt_tab_right {
             bindings = <&m_alt_tab_custom>;
-            key-positions = <43 44>;
+            key-positions = <43 42>;
             timeout-ms = <35>;
             require-prior-idle-ms = <(-1)>;
             layers = <0>;
