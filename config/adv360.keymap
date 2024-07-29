@@ -1434,18 +1434,18 @@
 &kp PLUS   &kp GRAVE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                          &kp F10        &kp N5  &kp NUMBER_6  &kp N7     &kp N8        &kp N9         &kp N0
 &kp MINUS  &kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T                                                           &kp F11        &kp Y   &kp U         &kp I      &kp O         &kp P          &kp NON_US_BACKSLASH
 &kp CAPS   &kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G      &kp ESCAPE  &kp INSERT         &none     &kp DELETE  &kp F12        &kp H   &kp J         &kp K      &kp L         &kp SEMICOLON  &kp PRINTSCREEN
-&kp K      &kp B       &kp Z         &kp X         &kp C         &kp V                                &kp PAGE_UP        &kp HOME                             &kp N   &kp M         &kp COMMA  &kp DOT       &kp SLASH      &kp PAUSE_BREAK
-&mo 30     &kp L       &kp B         &kp N         &kp M                       &kp SPACE  &kp LCTRL   &kp PAGE_DOWN      &kp END   &kp ENTER   &kp BACKSPACE          &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT      &kp PAUSE_BREAK
+&kp L      &kp B       &kp Z         &kp X         &kp C         &kp V                                &kp PAGE_UP        &kp HOME                             &kp N   &kp M         &kp COMMA  &kp DOT       &kp SLASH      &kp PAUSE_BREAK
+&mo 31     &kp P       &kp O         &kp N         &kp M                       &kp SPACE  &kp LCTRL   &kp PAGE_DOWN      &kp END   &kp ENTER   &kp BACKSPACE          &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT      &sticky_layer_mo 30 30
             >;
         };
 
         WinGamingFN {
             bindings = <
-&to 14  &kp F1  &kp F2        &kp F3          &kp F4            &kp F5  &kp N0                                              &none  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none   &none   &none         &none           &none             &none   &none                                               &none  &none   &none   &none   &none   &none    &none
-&none   &none   &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &none   &none   &none      &none              &none  &none  &none  &none   &none   &none   &none   &none    &none
-&none   &none   &none         &none           &none             &none                      &kp PAGE_UP        &none                &none   &none   &none   &none   &none    &none
-&none   &none   &none         &none           &none                     &none   &kp ENTER  &kp PAGE_DOWN      &none  &none  &none          &none   &none   &none   &none    &none
+&to 14  &kp F1  &kp F2        &kp F3          &kp F4            &kp F5  &none                                                       &none    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none   &none   &none         &none           &none             &none   &none                                                       &none    &none   &none   &none   &none   &none    &none
+&none   &none   &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &none   &none  &none      &none              &kp C_MUTE    &kp F12  &none    &none   &none   &none   &none   &none    &none
+&none   &none   &none         &none           &none             &none                     &kp PAGE_UP        &kp C_VOL_UP                    &none   &none   &none   &none   &none    &none
+&none   &none   &none         &none           &none                     &none  &kp ENTER  &kp PAGE_DOWN      &kp C_VOL_DN  &kp F10  &kp F11          &none   &none   &none   &none    &none
             >;
         };
 
