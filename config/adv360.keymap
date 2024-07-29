@@ -1458,16 +1458,6 @@
 &none  &none         &none         &none         &none                       &to 0        &to 14     &to 29        &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC            &bl BL_DEC            &none       &none  &none
             >;
         };
-
-        layer_32 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &kp A   &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
