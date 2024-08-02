@@ -700,27 +700,6 @@
             label = "TEST";
         };
 
-        m_alt_tab_layer: m_alt_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 28>,
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_release>,
-                <&mo 28>;
-
-            label = "M_ALT_TAB";
-        };
-
         m_extend_word_left: m_extend_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1071,9 +1050,7 @@
                 <&macro_press>,
                 <&kp RSHIFT>,
                 <&macro_press>,
-                <&kp RALT>,
-                <&macro_press>,
-                <&kp RIGHT_COMMAND>,
+                <&kp RIGHT_ALT>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_press>,
@@ -1082,15 +1059,11 @@
                 <&macro_release>,
                 <&mo 28>,
                 <&macro_release>,
-                <&kp RALT>,
-                <&macro_release>,
-                <&kp RIGHT_COMMAND>,
+                <&kp RIGHT_ALT>,
                 <&macro_release>,
                 <&kp RSHIFT>,
                 <&macro_release>,
-                <&kp RCTRL>,
-                <&macro_tap>,
-                <&kp SPACE>;
+                <&kp RCTRL>;
 
             label = "M_ALT_TAB_CUSTOM";
             wait-ms = <20>;
