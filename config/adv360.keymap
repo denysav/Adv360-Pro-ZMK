@@ -124,16 +124,6 @@
             flavor = "hold-preferred";
         };
 
-        m_alt_tab_behaviour: m_alt_tab_behaviour {
-            compatible = "zmk,behavior-hold-tap";
-            label = "M_ALT_TAB_BEHAVIOUR";
-            bindings = <&m_alt_tab_layer>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
-        };
-
         thumb: thumb {
             compatible = "zmk,behavior-hold-tap";
             label = "THUMB";
