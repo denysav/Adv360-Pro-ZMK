@@ -202,19 +202,6 @@
             hold-while-undecided-linger;
         };
 
-        m_left_mod_alt_tab_layer: m_left_mod_alt_tab_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "M_LEFT_MOD_ALT_TAB_LAYER";
-            bindings = <&m_alt_tab_layer>, <&sl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <99999>;
-            quick-tap-ms = <170>;
-            flavor = "balanced";
-            retro-tap;
-            hold-trigger-key-positions = <65 66 69 70>;
-        };
-
         layer_toggle_moment: layer_toggle_moment {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TOGGLE_MOMENT";
