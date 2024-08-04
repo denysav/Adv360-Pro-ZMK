@@ -1050,7 +1050,7 @@
         mac_home: mac_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_tap>, <&kp LS(LA(LC(LG(F19))))>;
+            bindings = <&to 0>, <&macro_tap>, <&kp LS(LA(LC(LG(F11))))>;
 
             label = "MAC_MODE";
         };
@@ -1058,7 +1058,7 @@
         citadel: citadel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 14>, <&macro_tap>, <&kp LS(LA(LC(LG(F20))))>;
+            bindings = <&to 14>, <&macro_tap>, <&kp LS(LA(LC(LG(F12))))>;
 
             label = "CITADEL";
         };
@@ -1403,7 +1403,7 @@
             bindings = <
 &citadel                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                                  &none                   &none  &none                 &none                 &none       &none  &none
 &mac_home                &none         &none         &none         &none         &none         &bootloader                                                                            &bootloader             &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none       &none  &none
-&kp LS(LA(LC(LG(F18))))  &none         &none         &none         &none         &none         &none          &none                 &kp C_MUTE          &kp C_NEXT      &kp C_MUTE    &rgb_ug RGB_MEFS_CMD 5  &none  &kp K_PREV            &kp K_PLAY_PAUSE      &kp K_NEXT  &none  &none
+&kp LS(LA(LC(LG(F10))))  &none         &none         &none         &none         &none         &none          &none                 &kp C_MUTE          &kp C_NEXT      &kp C_MUTE    &rgb_ug RGB_MEFS_CMD 5  &none  &kp K_PREV            &kp K_PLAY_PAUSE      &kp K_NEXT  &none  &none
 &none                    &none         &none         &none         &none         &none                                              &kp C_PP            &kp C_PP                                              &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_MUTE  &none  &none
 &none                    &none         &to 0         &to 14        &to 29                      &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS      &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP                   &bl BL_DEC            &bl BL_INC            &bl BL_TOG  &none  &none
             >;
