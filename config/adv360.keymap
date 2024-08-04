@@ -637,6 +637,22 @@
             require-prior-idle-ms = <(-1)>;
             layers = <14>;
         };
+
+        m_browser_tab_sw_prev_combo {
+            bindings = <&m_browser_tab_sw_prev_macro>;
+            key-positions = <56 55>;
+            timeout-ms = <45>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <0>;
+        };
+
+        m_browser_tab_sw_next_combo {
+            bindings = <&m_browser_tab_sw_next_macro>;
+            key-positions = <56 57>;
+            timeout-ms = <45>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -1083,6 +1099,58 @@
 
             label = "W_DESKTOP_SWITCHER_LAYER";
             wait-ms = <20>;
+        };
+
+        m_browser_tab_sw_prev_macro: m_browser_tab_witcher_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_press>,
+                <&kp RGUI>,
+                <&macro_tap>,
+                <&kp RSHIFT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_press>,
+                <&mo 28>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 28>,
+                <&macro_release>,
+                <&kp RGUI>,
+                <&macro_release>,
+                <&kp RCTRL>;
+
+            label = "M_BROWSER_TAB_WITCHER_MACRO";
+            wait-ms = <20>;
+            tap-ms = <20>;
+        };
+
+        m_browser_tab_sw_next_macro: m_browser_tab_sw_next_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_press>,
+                <&kp RGUI>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_press>,
+                <&mo 28>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 28>,
+                <&macro_release>,
+                <&kp RGUI>,
+                <&macro_release>,
+                <&kp RCTRL>;
+
+            label = "M_BROWSER_TAB_SW_NEXT_MACRO";
+            wait-ms = <20>;
+            tap-ms = <20>;
         };
     };
 
