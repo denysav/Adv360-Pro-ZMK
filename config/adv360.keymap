@@ -1169,6 +1169,22 @@
             wait-ms = <20>;
             tap-ms = <20>;
         };
+
+        win_first_desktop: win_first_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LG(LEFT_ARROW)>,
+                <&macro_tap>,
+                <&kp LG(LEFT_ARROW)>,
+                <&macro_tap>,
+                <&kp LG(LEFT_ARROW)>,
+                <&macro_tap>,
+                <&kp LG(LEFT_ARROW)>;
+
+            label = "WIN_FIRST_DESKTOP";
+        };
     };
 
     keymap {
