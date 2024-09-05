@@ -1206,7 +1206,7 @@
 &none  &none  &none  &none  &none  &none  &none                                                          &none                      &none  &none  &none  &none  &none  &none
 &none  &sl 5  &sl 4  &sl 3  &sl 2  &none  &none                      &kp F24  &none      &none  &kp F24  &none                      &none  &sl 6  &sl 7  &sl 8  &sl 9  &none
 &none  &none  &none  &none  &none  &none                                      &none      &none                                      &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &kp LS(LA(LG(LC(ENTER))))  &kp F24  &none      &none  &none    &kp LS(LA(LG(LC(SPACE))))         &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &kp LS(LA(LG(LC(SPACE))))  &kp F24  &none      &none  &none    &kp LS(LA(LG(LC(ENTER))))         &none  &none  &none  &none  &none
             >;
         };
 
