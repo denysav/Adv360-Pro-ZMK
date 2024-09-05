@@ -391,14 +391,6 @@
             layers = <0 13>;
         };
 
-        m_alt_tab_left {
-            bindings = <&m_alt_tab_custom>;
-            key-positions = <31 30>;
-            timeout-ms = <35>;
-            layers = <0>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
         m_detele_word_backward_cross {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <65 41>;
@@ -616,8 +608,8 @@
 
         m_alt_tab_right {
             bindings = <&m_alt_tab_custom>;
-            key-positions = <43 42>;
-            timeout-ms = <35>;
+            key-positions = <43 42 41>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <(-1)>;
             layers = <0>;
         };
@@ -1056,11 +1048,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RCTRL>,
-                <&macro_press>,
-                <&kp RSHIFT>,
-                <&macro_press>,
-                <&kp RIGHT_ALT>,
+                <&kp RGUI>,
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_press>,
@@ -1069,11 +1057,7 @@
                 <&macro_release>,
                 <&mo 27>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>,
-                <&macro_release>,
-                <&kp RSHIFT>,
-                <&macro_release>,
-                <&kp RCTRL>;
+                <&kp RGUI>;
 
             label = "M_ALT_TAB_CUSTOM";
             wait-ms = <20>;
