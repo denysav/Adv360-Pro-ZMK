@@ -1326,21 +1326,21 @@
 
         WinMod {
             bindings = <
-&none  &none      &none      &none   &none   &none  &none                                       &none  &none  &none   &none   &none   &none   &none
-&none  &kp KP_N1  &kp KP_N2  &none   &none   &none  &none                                       &none  &none  &none   &none   &none   &none   &none
-&none  &sl 20     &sl 19     &sl 18  &sl 17  &none  &none   &kp F24  &none      &none  &kp F24  &none  &none  &sl 21  &sl 22  &sl 23  &sl 24  &none
-&none  &none      &none      &none   &none   &none                   &none      &none                  &none  &none   &none   &none   &none   &none
-&none  &none      &none      &none   &none          &sl 27  &kp F24  &none      &none  &none    &none         &none   &none   &none   &none   &none
+&none  &none      &none      &none   &none   &none  &none                                       &none   &none  &none   &none   &none   &none   &none
+&none  &kp KP_N1  &kp KP_N2  &none   &none   &none  &none                                       &none   &none  &none   &none   &none   &none   &none
+&none  &sl 20     &sl 19     &sl 18  &sl 17  &none  &none   &kp F24  &none      &none  &kp F24  &none   &none  &sl 21  &sl 22  &sl 23  &sl 24  &none
+&none  &none      &none      &none   &none   &none                   &none      &none                   &none  &none   &none   &none   &none   &none
+&none  &none      &none      &none   &none          &sl 16  &kp F24  &none      &none  &none    &sl 16         &none   &none   &none   &none   &none
             >;
         };
 
         WinVirtDesktop {
             bindings = <
-&none  &none  &none            &none            &none      &none      &none                                   &none   &none            &none      &none      &none      &none  &none
-&none  &none  &kp KP_N7        &kp KP_NUMBER_8  &none      &kp KP_N9  &none                                   &none   &none            &none      &none      &none      &none  &none
-&none  &none  &kp KP_NUMBER_3  &kp KP_N1        &kp KP_N2  &none      &none   &none  &none      &none  &none  &none   &none            &kp KP_N4  &kp KP_N5  &kp KP_N6  &none  &none
-&none  &none  &none            &none            &none      &none                     &none      &none                 &kp KP_NUMBER_0  &none      &none      &none      &none  &none
-&none  &none  &none            &none            &kp LCTRL             &sl 16  &none  &none      &none  &none  &sl 16                   &sk LCTRL  &none      &none      &none  &none
+&none  &none  &none            &none            &none      &none      &none                                         &none         &none            &none      &none      &none      &none  &none
+&none  &none  &kp KP_N7        &kp KP_NUMBER_8  &none      &kp KP_N9  &none                                         &none         &none            &none      &none      &none      &none  &none
+&none  &none  &kp KP_NUMBER_3  &kp KP_N1        &kp KP_N2  &none      &none         &none  &none      &none  &none  &none         &none            &kp KP_N4  &kp KP_N5  &kp KP_N6  &none  &none
+&none  &none  &none            &none            &none      &none                           &none      &none                       &kp KP_NUMBER_0  &none      &none      &none      &none  &none
+&none  &none  &none            &none            &kp LCTRL             &kp KP_CLEAR  &none  &none      &none  &none  &kp KP_ENTER                   &sk LCTRL  &none      &none      &none  &none
             >;
         };
 
