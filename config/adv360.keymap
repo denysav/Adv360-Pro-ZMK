@@ -600,7 +600,7 @@
 
         w_alt_tab_right {
             bindings = <&w_alt_tab_layer>;
-            key-positions = <43 42 44>;
+            key-positions = <43 42 41>;
             timeout-ms = <50>;
             require-prior-idle-ms = <(-1)>;
             layers = <13>;
@@ -654,12 +654,11 @@
             layers = <13>;
         };
 
-        w_alt_tab_left {
-            bindings = <&w_alt_tab_layer>;
-            key-positions = <30 31>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <13>;
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <44 43>;
+            timeout-ms = <55>;
+            layers = <0 13>;
         };
     };
 
@@ -1306,11 +1305,11 @@
 
         WinBase {
             bindings = <
-&none                               &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &layer_toggle_moment 31 25                                                                                                         &layer_toggle_moment 31 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0            &none
-&kp TAB                             &kp Q             &kp W             &kp E                 &kp R               &kp T   &none                                                                                                                              &none                      &kp Y   &kp U               &kp I                 &kp O             &kp P             &none
-&sl 15                              &kp A             &kp S             &kp D                 &kp F               &kp G   &sk LS(LA(LCTRL))           &kp INS                          &kp LWIN               &kp RC(RS(RA(F10)))  &kp ESCAPE                &sk RS(RA(RCTRL))          &kp H   &kp J               &kp K                 &kp L             &kp SEMICOLON     &sl 15
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z             &kp X             &kp C                 &kp V               &kp B                                                                &kp LG(PAGE_UP)        &kp RA(RC(RS(F11)))                                                       &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH         &thumb_kp_sticky_key RSHIFT RSHIFT
-&sticky_layer_mo 31 27              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE         &thumb_mod LS(LA(LCTRL)) DELETE  &kp LG(PAGE_DOWN)      &sl 27               &w_with_lgui_nav 0 ENTER  &space 25 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &sl 27
+&kp EQUAL                           &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &layer_toggle_moment 31 25                                                                                                       &layer_toggle_moment 31 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0            &kp MINUS
+&kp TAB                             &kp Q             &kp W             &kp E                 &kp R               &kp T   &none                                                                                                                            &none                      &kp Y   &kp U               &kp I                 &kp O             &kp P             &none
+&sl 15                              &kp A             &kp S             &kp D                 &kp F               &kp G   &sk LS(LA(LCTRL))           &kp INS                          &kp LWIN             &kp RC(RS(RA(F10)))  &kp ESCAPE                &sk RS(RA(RCTRL))          &kp H   &kp J               &kp K                 &kp L             &kp SEMICOLON     &sl 15
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z             &kp X             &kp C                 &kp V               &kp B                                                                &kp LG(PAGE_UP)      &kp RA(RC(RS(F11)))                                                       &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH         &thumb_kp_sticky_key RSHIFT RSHIFT
+&sticky_layer_mo 31 27              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE         &thumb_mod LS(LA(LCTRL)) DELETE  &sl 16               &sl 27               &w_with_lgui_nav 0 ENTER  &space 25 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &sl 27
             >;
         };
 
