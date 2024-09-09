@@ -549,23 +549,6 @@
             require-prior-idle-ms = <(-1)>;
         };
 
-        mac_fn_sticky {
-            bindings = <&sl 12>;
-            key-positions = <44 43>;
-            timeout-ms = <75>;
-            slow-release;
-            require-prior-idle-ms = <(-1)>;
-            layers = <0>;
-        };
-
-        win_fn_sticky {
-            bindings = <&sl 27>;
-            key-positions = <43 44>;
-            timeout-ms = <75>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <13>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
             key-positions = <50 51>;
