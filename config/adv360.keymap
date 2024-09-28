@@ -643,6 +643,13 @@
             timeout-ms = <55>;
             layers = <0 13>;
         };
+
+        m_sticky_caps {
+            bindings = <&sk CAPSLOCK>;
+            key-positions = <30 31 32>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
