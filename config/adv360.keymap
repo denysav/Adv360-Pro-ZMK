@@ -650,6 +650,14 @@
             layers = <0>;
             timeout-ms = <50>;
         };
+
+        w_app_layer {
+            bindings = <&sl 16>;
+            key-positions = <30 32 31>;
+            timeout-ms = <65>;
+            require-prior-idle-ms = <(-1)>;
+            layers = <13>;
+        };
     };
 
     macros {
@@ -1325,11 +1333,11 @@
 
         WinVirtDesktop {
             bindings = <
-&none  &none  &none            &none            &none      &none      &none                                         &none         &none            &none      &none      &none      &none  &none
-&none  &none  &kp KP_N7        &kp KP_NUMBER_8  &none      &kp KP_N9  &none                                         &none         &none            &none      &none      &none      &none  &none
-&none  &none  &kp KP_NUMBER_3  &kp KP_N1        &kp KP_N2  &none      &none         &none  &none      &none  &none  &none         &none            &kp KP_N4  &kp KP_N5  &kp KP_N6  &none  &none
-&none  &none  &none            &none            &none      &none                           &none      &none                       &kp KP_NUMBER_0  &none      &none      &none      &none  &none
-&none  &none  &none            &none            &sk LCTRL             &kp KP_CLEAR  &none  &none      &none  &none  &kp KP_ENTER                   &sk LCTRL  &none      &none      &none  &none
+&none  &none                &none                &none                &none                &none                &none                                         &none         &none                &none                &none                &none                &none                &none
+&none  &kp LA(KP_NUMBER_1)  &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)  &kp LA(KP_NUMBER_4)  &kp LA(KP_NUMBER_5)  &none                                         &none         &kp LA(KP_NUMBER_6)  &kp LA(KP_NUMBER_7)  &kp LA(KP_NUMBER_8)  &kp LA(KP_NUMBER_9)  &kp LA(KP_NUMBER_0)  &none
+&none  &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_2)  &kp LC(KP_NUMBER_3)  &kp LA(KP_NUMBER_4)  &kp LC(KP_NUMBER_5)  &none         &none  &none      &none  &none  &none         &kp LC(KP_NUMBER_6)  &kp LC(KP_NUMBER_7)  &kp LC(KP_NUMBER_8)  &kp LC(KP_NUMBER_9)  &kp LC(KP_NUMBER_0)  &none
+&none  &kp LG(KP_NUMBER_1)  &kp LG(NUMBER_3)     &kp LG(KP_NUMBER_3)  &kp LG(KP_NUMBER_4)  &kp LG(KP_NUMBER_5)                       &none      &none                       &kp LG(KP_NUMBER_6)  &kp LG(KP_NUMBER_7)  &kp LG(KP_NUMBER_8)  &kp LG(KP_NUMBER_9)  &kp LG(KP_NUMBER_0)  &none
+&none  &none                &none                &none                &sk LCTRL                                 &kp KP_CLEAR  &none  &none      &none  &none  &kp KP_ENTER                       &sk LCTRL            &none                &none                &none                &none
             >;
         };
 
