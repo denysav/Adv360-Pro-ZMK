@@ -1234,11 +1234,11 @@
 
         MacNavigation {
             bindings = <
-&kp LG(W)  &kp LG(LEFT_BRACKET)   &kp LC(LS(TAB))   &kp LC(TAB)           &kp LG(RIGHT_BRACKET)  &kp LG(T)      &to 0                                                     &to 0                 &none  &kp RC(RS(TAB))  &kp LG(NON_US_BSLH)  &kp RC(TAB)    &none      &none
-&none      &none                  &kp LG(LEFT)      &kp UP_ARROW          &kp RG(RIGHT)          &kp PAGE_UP    &kp LG(UP_ARROW)                                          &sk RS(RA(RC(RGUI)))  &none  &kp RG(RS(G))    &kp RG(F)            &kp RG(G)      &none      &none
-&none      &m_select_all_or_line  &kp LEFT          &kp DOWN              &kp RIGHT              &kp PAGE_DOWN  &kp LG(DOWN)         &to 0       &none      &none  &to 0  &sk RS(RA(RGUI))      &none  &kp RALT         &kp RSHIFT           &kp RIGHT_GUI  &kp RCTRL  &kp ENTER
-&none      &kp Z                  &kp X             &kp C                 &kp V                  &kp B                                           &none      &none                               &none  &none            &none                &none          &none      &none
-&none      &kp_sk LCTRL LCTRL     &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI                      &thumb 11 BACKSPACE  &kp DELETE  &none      &none  &none  &kp SPACE                    &kp LEFT         &kp DOWN             &kp UP_ARROW   &kp RIGHT  &none
+&kp LG(W)  &kp LG(LEFT_BRACKET)   &kp LC(LS(TAB))   &kp LC(TAB)           &kp LG(RIGHT_BRACKET)  &kp LG(T)      &to 0                                                     &to 0                 &none  &kp RC(RS(TAB))  &kp LG(NON_US_BSLH)  &kp RC(TAB)   &none      &none
+&none      &none                  &kp LG(LEFT)      &kp UP_ARROW          &kp RG(RIGHT)          &kp PAGE_UP    &kp LG(UP_ARROW)                                          &sk RS(RA(RC(RGUI)))  &none  &kp RG(RS(G))    &kp RG(F)            &kp RG(G)     &none      &none
+&none      &m_select_all_or_line  &kp LEFT          &kp DOWN              &kp RIGHT              &kp PAGE_DOWN  &kp LG(DOWN)         &to 0       &none      &none  &to 0  &sk RS(RA(RGUI))      &none  &kp RGUI         &kp RSHIFT           &kp RALT      &kp RCTRL  &kp ENTER
+&none      &kp Z                  &kp X             &kp C                 &kp V                  &kp B                                           &none      &none                               &none  &none            &none                &none         &none      &none
+&none      &kp_sk LCTRL LCTRL     &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI                      &thumb 11 BACKSPACE  &kp DELETE  &none      &none  &none  &kp SPACE                    &kp LEFT         &kp DOWN             &kp UP_ARROW  &kp RIGHT  &none
             >;
         };
 
