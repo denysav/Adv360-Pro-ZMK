@@ -416,82 +416,12 @@
             layers = <11 26>;
         };
 
-        sym_excl {
-            bindings = <&kp EXCL>;
-            key-positions = <30 17>;
-            layers = <11 26>;
-            require-prior-idle-ms = <(-1)>;
-            timeout-ms = <85>;
-        };
-
-        sym_amp {
-            bindings = <&kp AMPS>;
-            key-positions = <47 48>;
-            timeout-ms = <80>;
-            layers = <11 26>;
-        };
-
-        sym_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <48 49>;
-            timeout-ms = <80>;
-            layers = <11 26>;
-        };
-
         sym_zero {
             bindings = <&kp N0>;
             key-positions = <55 56>;
             timeout-ms = <35>;
             layers = <11 26 27>;
             require-prior-idle-ms = <(-1)>;
-        };
-
-        sym_homedir {
-            bindings = <&homedir>;
-            key-positions = <48 49 50>;
-            timeout-ms = <80>;
-            layers = <11 26>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
-        sym_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <56 57>;
-            timeout-ms = <45>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <11 26>;
-        };
-
-        sym_dot {
-            bindings = <&kp DOT>;
-            key-positions = <57 58>;
-            timeout-ms = <65>;
-            layers = <11 26>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
-        sym_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <31 50>;
-            timeout-ms = <85>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <11 26>;
-        };
-
-        sym_at_two_key {
-            bindings = <&kp AT>;
-            key-positions = <31 48>;
-            timeout-ms = <85>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <11 26>;
-        };
-
-        sym_question {
-            bindings = <&kp QUESTION>;
-            key-positions = <32 17>;
-            timeout-ms = <85>;
-            require-prior-idle-ms = <(-1)>;
-            layers = <11 26>;
         };
 
         m_paste {
@@ -618,6 +548,14 @@
             timeout-ms = <65>;
             require-prior-idle-ms = <(-1)>;
             layers = <13>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <48 49>;
+            layers = <11 25>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <0>;
         };
     };
 
@@ -1244,11 +1182,11 @@
 
         MacSymbols {
             bindings = <
-&kp GRAVE        &kp BACKSLASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp COMMA      &kp DOT                                                                                 &none                 &none          &none               &none           &none               &none                 &kp BACKSLASH
-&kp EXCLAMATION  &kp LEFT_BRACE    &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE   &kp QUESTION   &kp AT                                                                                  &kp RA(DELETE)        &kp DELETE     &kp N7              &kp N8          &kp N9              &kp MINUS             &kp TAB
-&kp POUND        &hml LCTRL CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp PERCENT  &none  &none      &kp BACKSLASH  &kp N0                                    &kp RA(BACKSPACE)     &kp BACKSPACE  &hmr RGUI NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp ENTER
-&kp COLON        &kp LESS_THAN     &kp PIPE              &kp MINUS               &kp GREATER_THAN  &kp KP_DIVIDE                      &none      &kp DOT                                                                        &none          &kp NUMBER_1        &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
-&kp TILDE        &kp AMPS          &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PLUS                         &trans       &none  &none      &kp COMMA      &thumb_mod RA(RC(RG(RIGHT_SHIFT))) ENTER  &non_repeat_kp SPACE                 &kp N0              &kp PLUS        &kp MINUS           &kp RIGHT             &none
+&kp NON_US_BACKSLASH  &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp COLON         &kp COMMA      &kp DOT                                                                         &none                 &none          &none               &none           &none               &none                 &kp BACKSLASH
+&kp EXCLAMATION       &kp LEFT_BRACE    &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE   &kp QUESTION   &kp AT                                                                          &kp RA(DELETE)        &kp DELETE     &kp N7              &kp N8          &kp N9              &kp MINUS             &kp TAB
+&kp POUND             &hml LCTRL CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LGUI DOLLAR  &kp STAR       &kp AT   &none  &none      &kp COMMA  &kp DOT                                   &kp RA(BACKSPACE)     &kp BACKSPACE  &hmr RGUI NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp ENTER
+&kp TILDE             &kp LESS_THAN     &kp PIPE              &kp MINUS               &kp GREATER_THAN  &kp KP_DIVIDE                  &none      &none                                                                      &none          &kp NUMBER_1        &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
+&kp PERCENT           &kp AMPS          &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PLUS                         &trans   &none  &none      &none      &thumb_mod RA(RC(RG(RIGHT_SHIFT))) ENTER  &non_repeat_kp SPACE                 &kp N0              &kp PLUS        &kp MINUS           &kp RIGHT             &none
             >;
         };
 
@@ -1394,11 +1332,11 @@
 
         WinSymbols {
             bindings = <
-&kp GRAVE  &kp BACKSLASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON      &kp COMMA     &kp PERIOD                                                                             &none                 &none          &none                &none           &none               &none                 &kp BACKSLASH
-&kp EXCL   &kp LEFT_BRACE   &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE    &kp QUESTION  &kp AT                                                                                 &kp RC(DELETE)        &kp DELETE     &kp N7               &kp N8          &kp N9              &none                 &kp TAB
-&kp HASH   &hml LGUI CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LCTRL DOLLAR  &kp ASTERISK  &kp PERCENT  &trans  &trans        &kp BACKSLASH  &kp N0                               &kp RC(BACKSPACE)     &kp BACKSPACE  &hmr RCTRL NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
-&kp COLON  &kp LESS_THAN    &kp PIPE              &kp MINUS               &kp GREATER_THAN   &kp SLASH                          &kp HOME      &kp DOT                                                                   &none          &kp NUMBER_1         &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
-&kp AMPS   &kp TILDE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp KP_PLUS                      &kp SPACE    &trans  &kp END       &kp COMMA      &thumb_mod RA(RC(RG(RSHIFT))) ENTER  &non_repeat_kp SPACE                 &kp N0               &kp PLUS        &kp MINUS           &kp RIGHT             &none
+&kp NON_US_BACKSLASH  &kp GRAVE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp COLON          &kp COMMA     &kp PERIOD                                                                        &none                 &none          &none                &none           &none               &none                 &kp BACKSLASH
+&kp EXCL              &kp LEFT_BRACE   &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES       &kp RIGHT_BRACE    &kp QUESTION  &kp AT                                                                            &kp RC(DELETE)        &kp DELETE     &kp N7               &kp N8          &kp N9              &none                 &kp TAB
+&kp HASH              &hml LGUI CARET  &hml LALT EQUAL       &hml LSHIFT UNDERSCORE  &hml LCTRL DOLLAR  &kp ASTERISK  &kp AT      &trans  &trans        &kp COMMA  &kp DOT                              &kp RC(BACKSPACE)     &kp BACKSPACE  &hmr RCTRL NUMBER_4  &hmr RSHIFT N5  &hmr RALT NUMBER_6  &hmr RCTRL SEMICOLON  &kp BACKSPACE
+&kp TILDE             &kp LESS_THAN    &kp PIPE              &kp MINUS               &kp GREATER_THAN   &kp SLASH                         &kp HOME      &none                                                                 &none          &kp NUMBER_1         &kp NUMBER_2    &kp NUMBER_3        &kp SLASH             &none
+&kp PERCENT           &kp AMPERSAND    &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp KP_PLUS                      &kp SPACE   &trans  &kp END       &none      &thumb_mod RA(RC(RG(RSHIFT))) ENTER  &non_repeat_kp SPACE                 &kp N0               &kp PLUS        &kp MINUS           &kp RIGHT             &none
             >;
         };
 
