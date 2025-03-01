@@ -551,7 +551,7 @@
         };
 
         tilde {
-            bindings = <&kp TILDE>;
+            bindings = <&kp AMPERSAND>;
             key-positions = <48 49>;
             layers = <11 26>;
             timeout-ms = <50>;
