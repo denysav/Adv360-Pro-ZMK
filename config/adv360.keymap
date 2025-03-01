@@ -339,6 +339,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        ml_sl: ml_sl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ML_SL";
+            bindings = <&layer_toggle_moment>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -556,6 +566,20 @@
             layers = <11 26>;
             timeout-ms = <50>;
             require-prior-idle-ms = <0>;
+        };
+
+        m_fn_third {
+            bindings = <&ml_sl 12 12>;
+            key-positions = <65 70>;
+            layers = <0>;
+            timeout-ms = <55>;
+        };
+
+        w_third_fn {
+            bindings = <&ml_sl 27 27>;
+            key-positions = <65 70>;
+            layers = <0>;
+            timeout-ms = <55>;
         };
     };
 
