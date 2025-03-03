@@ -578,7 +578,7 @@
         w_third_fn {
             bindings = <&ml_sl 27 27>;
             key-positions = <65 70>;
-            layers = <0>;
+            layers = <13>;
             timeout-ms = <55>;
         };
     };
