@@ -585,7 +585,7 @@
         citadel_combo {
             bindings = <&citadel>;
             key-positions = <69 13>;
-            timeout-ms = <100>;
+            timeout-ms = <500>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -593,7 +593,7 @@
         mac_home_combo {
             bindings = <&mac_home>;
             key-positions = <69 13>;
-            timeout-ms = <100>;
+            timeout-ms = <500>;
             require-prior-idle-ms = <100>;
             layers = <13>;
         };
@@ -601,7 +601,7 @@
         citadel_combo_2 {
             bindings = <&citadel_2>;
             key-positions = <13 66>;
-            timeout-ms = <100>;
+            timeout-ms = <500>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -609,7 +609,7 @@
         mac_home_combo_2 {
             bindings = <&mac_home_2>;
             key-positions = <13 66>;
-            timeout-ms = <100>;
+            timeout-ms = <500>;
             require-prior-idle-ms = <100>;
             layers = <13>;
         };
