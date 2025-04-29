@@ -581,6 +581,38 @@
             layers = <13>;
             timeout-ms = <55>;
         };
+
+        citadel_combo {
+            bindings = <&citadel>;
+            key-positions = <69 13>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        mac_home_combo {
+            bindings = <&mac_home>;
+            key-positions = <69 13>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
+            layers = <13>;
+        };
+
+        citadel_combo_2 {
+            bindings = <&citadel_2>;
+            key-positions = <13 66>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        mac_home_combo_2 {
+            bindings = <&mac_home_2>;
+            key-positions = <13 66>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
+            layers = <13>;
+        };
     };
 
     macros {
@@ -987,7 +1019,7 @@
         mac_home: mac_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_tap>, <&kp LS(LA(LC(LG(F11))))>;
+            bindings = <&to 0>, <&macro_tap>, <&kp LS(LA(LC(LG(F12))))>;
 
             label = "MAC_MODE";
         };
@@ -1088,6 +1120,22 @@
                 <&kp LG(LEFT_ARROW)>;
 
             label = "WIN_FIRST_DESKTOP";
+        };
+
+        citadel_2: citadel_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 13>, <&macro_tap>, <&kp LS(LA(LC(F12)))>;
+
+            label = "CITADEL_2";
+        };
+
+        mac_home_2: mac_home_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_tap>, <&kp LS(LA(LC(F12)))>;
+
+            label = "MAC_HOME_2";
         };
     };
 
