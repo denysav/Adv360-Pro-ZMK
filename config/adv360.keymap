@@ -1188,11 +1188,11 @@
 
         WinBase {
             bindings = <
-&kp EQUAL                           &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &layer_toggle_moment 29 25                                                                                                                 &layer_toggle_moment 29 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0               &kp MINUS
-&kp TAB                             &kp Q             &kp W             &kp E                 &kp R               &kp T   &kp LC(BACKSLASH)                                                                                                                          &kp RC(SLASH)              &kp Y   &kp U               &kp I                 &kp O             &kp P                &kp BACKSLASH
-&sl 16                              &hml LGUI A       &hml LALT S       &hml LSHIFT D         &hml LCTRL F        &kp G   &kp LA(BACKSLASH)           &kp INS                          &kp LWIN                    &kp RC(RS(RA(F10)))     &kp ESCAPE                &kp RA(SLASH)              &kp H   &hmr RCTRL J        &hmr RSHIFT K         &hmr RALT L       &hmr RGUI SEMICOLON  &sl 15
-&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z             &kp X             &kp C                 &kp V               &kp B                                                                &sticky_layer_mo 27 27      &sticky_layer_mo 27 27                                                       &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH            &thumb_kp_sticky_key RSHIFT RSHIFT
-&sticky_layer_mo 29 27              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE         &thumb_mod LS(LA(LCTRL)) DELETE  &sl 16                      &sl 27                  &w_with_lgui_nav 0 ENTER  &space 25 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI     &kp_sk CAPSLOCK CAPSLOCK
+&kp EQUAL                           &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &layer_toggle_moment 29 25                                                                                                  &layer_toggle_moment 29 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0               &kp MINUS
+&kp TAB                             &kp Q             &kp W             &kp E                 &kp R               &kp T   &kp PAGE_UP                                                                                                                 &none                      &kp Y   &kp U               &kp I                 &kp O             &kp P                &kp BACKSLASH
+&sl 16                              &hml LGUI A       &hml LALT S       &hml LSHIFT D         &hml LCTRL F        &kp G   &kp PAGE_DOWN               &kp INS           &kp LWIN                    &kp RC(RS(RA(F10)))     &kp ESCAPE                &none                      &kp H   &hmr RCTRL J        &hmr RSHIFT K         &hmr RALT L       &hmr RGUI SEMICOLON  &kp ESCAPE
+&thumb_kp_sticky_key LSHIFT LSHIFT  &kp Z             &kp X             &kp C                 &kp V               &kp B                                                 &sticky_layer_mo 27 27      &sticky_layer_mo 27 27                                                       &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH            &thumb_kp_sticky_key RSHIFT RSHIFT
+&sticky_layer_mo 29 27              &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE         &thumb 27 DELETE  &sl 16                      &sl 27                  &w_with_lgui_nav 0 ENTER  &space 25 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI     &kp_sk CAPSLOCK CAPSLOCK
             >;
         };
 
@@ -1218,11 +1218,11 @@
 
         WinVirtDesktop {
             bindings = <
-&none  &none                    &none                &none                    &none                    &none                    &none                                         &none         &none                    &none                    &none                    &none                    &none                    &none
-&none  &kp LA(KP_NUMBER_1)      &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)      &kp LA(KP_NUMBER_4)      &kp LA(KP_NUMBER_5)      &none                                         &none         &kp LA(KP_NUMBER_6)      &kp LA(KP_NUMBER_7)      &kp LA(KP_NUMBER_8)      &kp LA(KP_NUMBER_9)      &kp LA(KP_NUMBER_0)      &none
-&none  &kp LC(KP_NUMBER_1)      &kp LC(KP_NUMBER_2)  &kp LC(KP_NUMBER_3)      &kp LA(KP_NUMBER_4)      &kp LC(KP_NUMBER_5)      &none         &none  &none      &none  &none  &none         &kp LC(KP_NUMBER_6)      &kp LC(KP_NUMBER_7)      &kp LC(KP_NUMBER_8)      &kp LC(KP_NUMBER_9)      &kp LC(KP_NUMBER_0)      &none
-&none  &kp LC(LA(KP_NUMBER_1))  &kp LC(LA(KP_N3))    &kp LC(LA(KP_NUMBER_3))  &kp LC(LA(KP_NUMBER_4))  &kp LC(LA(KP_NUMBER_5))                       &none      &none                       &kp LC(LA(KP_NUMBER_6))  &kp LC(LA(KP_NUMBER_7))  &kp LC(LA(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &kp LC(LA(KP_NUMBER_0))  &none
-&none  &none                    &none                &none                    &sk LCTRL                                         &kp KP_CLEAR  &none  &none      &none  &none  &kp KP_ENTER                           &sk LCTRL                &none                    &none                    &none                    &none
+&none  &none                    &none                &none                    &none                    &none                    &none                                        &none         &none                    &none                    &none                    &none                    &none                    &none
+&none  &kp LA(KP_NUMBER_1)      &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)      &kp LA(KP_NUMBER_4)      &kp LA(KP_NUMBER_5)      &none                                        &none         &kp LA(KP_NUMBER_6)      &kp LA(KP_NUMBER_7)      &kp LA(KP_NUMBER_8)      &kp LA(KP_NUMBER_9)      &kp LA(KP_NUMBER_0)      &none
+&none  &kp LC(KP_NUMBER_1)      &kp LC(KP_NUMBER_2)  &kp LC(KP_NUMBER_3)      &kp LA(KP_NUMBER_4)      &kp LC(KP_NUMBER_5)      &none        &none  &none      &none  &none  &none         &kp LC(KP_NUMBER_6)      &kp LC(KP_NUMBER_7)      &kp LC(KP_NUMBER_8)      &kp LC(KP_NUMBER_9)      &kp LC(KP_NUMBER_0)      &none
+&none  &kp LC(LA(KP_NUMBER_1))  &kp LC(LA(KP_N3))    &kp LC(LA(KP_NUMBER_3))  &kp LC(LA(KP_NUMBER_4))  &kp LC(LA(KP_NUMBER_5))                      &none      &none                       &kp LC(LA(KP_NUMBER_6))  &kp LC(LA(KP_NUMBER_7))  &kp LC(LA(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &kp LC(LA(KP_NUMBER_0))  &none
+&none  &none                    &none                &none                    &sk LCTRL                                         &kp LA(TAB)  &none  &none      &none  &none  &kp KP_ENTER                           &sk LCTRL                &none                    &none                    &none                    &none
             >;
         };
 
@@ -1332,7 +1332,7 @@
 &none   &none     &none     &none       &none      &none   &sk LS(LA(LG(LCTRL)))                                                                        &sk RS(RA(RG(RCTRL)))  &none   &kp F7  &kp F8  &kp F9   &kp F12  &kp DELETE
 &to 13  &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &none   &sk LS(LA(LCTRL))      &tog 13               &kp C_NEXT          &kp C_MUTE         &kp F12  &sk RS(RA(RCTRL))      &none   &kp F4  &kp F5  &kp F6   &kp F11  &kp PRINTSCREEN
 &none   &none     &none     &none       &none      &none                                                &kp C_PP            &kp C_VOL_UP                                       &none   &kp F1  &kp F2  &kp F3   &kp F10  &kp SCROLLLOCK
-&to 13  &none     &none     &none       &none              &kp C_BRI_DEC          &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS      &kp C_VOLUME_DOWN  &kp F10  &kp F11                        &none   &none   &none    &none    &kp PAUSE_BREAK
+&to 13  &none     &none     &none       &none              &kp C_BRI_DEC          &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS      &kp C_VOLUME_DOWN  &kp F11  &kp F10                        &none   &none   &none    &none    &kp PAUSE_BREAK
             >;
         };
 
