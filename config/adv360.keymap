@@ -513,20 +513,6 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <0>;
         };
-
-        m_fn_third {
-            bindings = <&ml_sl 12 12>;
-            key-positions = <65 70>;
-            layers = <0>;
-            timeout-ms = <55>;
-        };
-
-        w_third_fn {
-            bindings = <&ml_sl 27 27>;
-            key-positions = <65 70>;
-            layers = <13>;
-            timeout-ms = <55>;
-        };
     };
 
     macros {
