@@ -1178,7 +1178,7 @@
 &kp TAB                 &kp Q             &kp W             &kp E                 &kp R               &kp T   &kp PAGE_UP                                                                                                   &none                      &kp Y   &kp U               &kp I                 &kp O             &kp P             &kp BACKSLASH
 &sl 16                  &kp A             &kp S             &kp D                 &kp F               &kp G   &kp PAGE_DOWN               &kp INS           &kp LWIN                    &kp RC(RS(RA(F10)))     &kp ESCAPE  &none                      &kp H   &kp J               &kp K                 &kp L             &kp SEMICOLON     &kp ESCAPE
 &kp LSHIFT              &kp Z             &kp X             &kp C                 &kp V               &kp B                                                 &sticky_layer_mo 27 27      &sticky_layer_mo 27 27                                         &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH         &kp RSHIFT
-&sticky_layer_mo 29 27  &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE         &thumb 27 DELETE  &w_alt_tab_layer            &w_alt_tab_layer        &kp ENTER   &space 25 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &kp_sk CAPSLOCK CAPSLOCK
+&sticky_layer_mo 29 27  &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE         &thumb 16 DELETE  &w_alt_tab_layer            &w_alt_tab_layer        &kp ENTER   &space 25 SPACE                    &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &kp_sk CAPSLOCK CAPSLOCK
             >;
         };
 
@@ -1204,11 +1204,11 @@
 
         WinVirtDesktop {
             bindings = <
-&none  &none                    &none                &none                    &none                    &none                    &none                                        &none         &none                    &none                    &none                    &none                    &none                    &none
-&none  &kp LA(KP_NUMBER_1)      &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)      &kp LA(KP_NUMBER_4)      &kp LA(KP_NUMBER_5)      &none                                        &none         &kp LA(KP_NUMBER_6)      &kp LA(KP_NUMBER_7)      &kp LA(KP_NUMBER_8)      &kp LA(KP_NUMBER_9)      &kp LA(KP_NUMBER_0)      &none
-&none  &kp LC(KP_NUMBER_1)      &kp LC(KP_NUMBER_2)  &kp LC(KP_NUMBER_3)      &kp LA(KP_NUMBER_4)      &kp LC(KP_NUMBER_5)      &none        &none  &none      &none  &none  &none         &kp LC(KP_NUMBER_6)      &kp LC(KP_NUMBER_7)      &kp LC(KP_NUMBER_8)      &kp LC(KP_NUMBER_9)      &kp LC(KP_NUMBER_0)      &none
-&none  &kp LC(LA(KP_NUMBER_1))  &kp LC(LA(KP_N3))    &kp LC(LA(KP_NUMBER_3))  &kp LC(LA(KP_NUMBER_4))  &kp LC(LA(KP_NUMBER_5))                      &none      &none                       &kp LC(LA(KP_NUMBER_6))  &kp LC(LA(KP_NUMBER_7))  &kp LC(LA(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &kp LC(LA(KP_NUMBER_0))  &none
-&none  &none                    &none                &none                    &sk LCTRL                                         &kp LA(TAB)  &none  &none      &none  &none  &kp KP_ENTER                           &sk LCTRL                &none                    &none                    &none                    &none
+&none  &none                    &none                &none                    &none                    &none                    &none                                             &none          &none                    &none                    &none                    &none                    &none                    &none
+&none  &kp LA(KP_NUMBER_1)      &kp LA(KP_NUMBER_2)  &kp LA(KP_NUMBER_3)      &kp LA(KP_NUMBER_4)      &kp LA(KP_NUMBER_5)      &none                                             &none          &kp LA(KP_NUMBER_6)      &kp LA(KP_NUMBER_7)      &kp LA(KP_NUMBER_8)      &kp LA(KP_NUMBER_9)      &kp LA(KP_NUMBER_0)      &none
+&none  &kp LG(NUMBER_1)         &kp LG(NUMBER_2)     &kp LG(NUMBER_3)         &kp LG(N4)               &kp LG(N5)               &none        &none  &none      &none  &none       &none          &kp RG(NUMBER_6)         &kp RG(N7)               &kp RG(NUMBER_8)         &kp RG(N9)               &kp RG(N0)               &none
+&none  &kp LC(LA(KP_NUMBER_1))  &kp LC(LA(KP_N3))    &kp LC(LA(KP_NUMBER_3))  &kp LC(LA(KP_NUMBER_4))  &kp LC(LA(KP_NUMBER_5))                      &none      &none                             &kp LC(LA(KP_NUMBER_6))  &kp LC(LA(KP_NUMBER_7))  &kp LC(LA(KP_NUMBER_8))  &kp LC(LA(KP_NUMBER_9))  &kp LC(LA(KP_NUMBER_0))  &none
+&none  &none                    &none                &none                    &sk LCTRL                                         &kp LA(TAB)  &none  &none      &none  &kp RA(F4)  &kp RG(ENTER)                           &sk LCTRL                &none                    &none                    &none                    &none
             >;
         };
 
