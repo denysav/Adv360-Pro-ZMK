@@ -349,6 +349,21 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        mac_to_win: mac_to_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MAC_TO_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&citadel_2>, <&citadel>;
+        };
+
+        win_to_mac: win_to_mac {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WIN_TO_MAC";
+            #binding-cells = <0>;
+            bindings = <&mac_home_2>, <&mac_home>;
+        };
     };
 
     combos {
@@ -1044,11 +1059,11 @@
 
         MacBase {
             bindings = <
-&kp EQUAL                     &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &lt 29 K_PP                                                                                           &layer_toggle_moment 29 12    &kp N6  &kp N7            &kp N8                &kp N9            &kp N0              &kp MINUS
-&kp TAB                       &kp Q               &kp W             &kp E                 &kp R             &kp T   &mt K_NEXT C_VOL_DN                                                                                   &kp RS(RA(RC(RG(NUMBER_1))))  &kp Y   &kp U             &kp I                 &kp O             &kp P               &kp BACKSLASH
-&sk LC(LA(LS(LEFT_COMMAND)))  &kp A               &kp S             &kp D                 &kp F             &kp G   &mt K_PREV C_VOL_DN  &kp INSERT        &kp LA(LS(LC(DOWN)))      &kp RS(RA(RC(UP_ARROW)))  &sl 12     &kp RS(RA(RC(RG(NUMBER_4))))  &kp H   &kp J             &kp K                 &kp L             &kp SEMICOLON       &kp ESCAPE
-&kp LSHIFT                    &kp Z               &kp X             &kp C                 &kp V             &kp B                                          &kp LS(LA(LC(LEFT)))      &kp RS(RA(RC(RIGHT)))                                              &kp N   &kp M             &kp COMMA             &kp DOT           &kp FSLH            &kp RSHIFT
-&sticky_layer_mo 29 12        &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 11 BACKSPACE  &thumb 12 DELETE  &m_alt_tab_custom         &kp RG(SPACE)             &kp ENTER  &space 10 SPACE                       &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL  &kp_sk CAPSLOCK CAPSLOCK
+&kp EQUAL                     &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &lt 29 K_PP                                                                                           &layer_toggle_moment 29 12  &kp N6  &kp N7            &kp N8                &kp N9            &kp N0              &kp MINUS
+&kp TAB                       &kp Q               &kp W             &kp E                 &kp R             &kp T   &mt K_NEXT C_VOL_DN                                                                                   &kp C_BRIGHTNESS_INC        &kp Y   &kp U             &kp I                 &kp O             &kp P               &kp BACKSLASH
+&sk LC(LA(LS(LEFT_COMMAND)))  &kp A               &kp S             &kp D                 &kp F             &kp G   &mt K_PREV C_VOL_DN  &kp INSERT        &kp LA(LS(LC(DOWN)))      &kp RS(RA(RC(UP_ARROW)))  &sl 12     &kp C_BRIGHTNESS_DEC        &kp H   &kp J             &kp K                 &kp L             &kp SEMICOLON       &kp ESCAPE
+&kp LSHIFT                    &kp Z               &kp X             &kp C                 &kp V             &kp B                                          &kp LS(LA(LC(LEFT)))      &kp RS(RA(RC(RIGHT)))                                            &kp N   &kp M             &kp COMMA             &kp DOT           &kp FSLH            &kp RSHIFT
+&sticky_layer_mo 29 12        &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 11 BACKSPACE  &thumb 12 DELETE  &m_alt_tab_custom         &kp RG(SPACE)             &kp ENTER  &space 10 SPACE                     &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL  &kp_sk CAPSLOCK CAPSLOCK
             >;
         };
 
