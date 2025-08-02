@@ -386,7 +386,7 @@
         m_alt_tab_mod_morph: m_alt_tab_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "M_ALT_TAB_MOD_MORPH";
-            bindings = <&m_alt_tab_custom>, <&kp LA(GRAVE)>;
+            bindings = <&m_alt_tab_custom>, <&kp LG(GRAVE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
