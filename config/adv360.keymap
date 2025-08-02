@@ -382,6 +382,24 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        m_alt_tab_mod_morph: m_alt_tab_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "M_ALT_TAB_MOD_MORPH";
+            bindings = <&m_alt_tab_custom>, <&kp LA(GRAVE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        w_alt_tab_mod_morph: w_alt_tab_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "W_ALT_TAB_MOD_MORPH";
+            bindings = <&w_alt_tab_layer>, <&kp LA(GRAVE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -1077,11 +1095,11 @@
 
         MacBase {
             bindings = <
-&kp EQUAL                     &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &lt 29 K_PP                                                                                           &mac_to_win_service 29 0  &kp N6  &kp N7            &kp N8                &kp N9            &kp N0              &kp MINUS
-&kp TAB                       &kp Q               &kp W             &kp E                 &kp R             &kp T   &mt K_NEXT C_VOL_DN                                                                                   &kp C_BRIGHTNESS_INC      &kp Y   &kp U             &kp I                 &kp O             &kp P               &kp BACKSLASH
-&sk LC(LA(LS(LEFT_COMMAND)))  &kp A               &kp S             &kp D                 &kp F             &kp G   &mt K_PREV C_VOL_DN  &kp INSERT        &kp LA(LS(LC(DOWN)))      &kp RS(RA(RC(UP_ARROW)))  &sl 12     &kp C_BRIGHTNESS_DEC      &kp H   &kp J             &kp K                 &kp L             &kp SEMICOLON       &kp ESCAPE
+&kp EQUAL                     &kp N1              &kp N2            &kp N3                &kp N4            &kp N5  &lt 29 C_PP                                                                                           &mac_to_win_service 29 0  &kp N6  &kp N7            &kp N8                &kp N9            &kp N0              &kp MINUS
+&kp TAB                       &kp Q               &kp W             &kp E                 &kp R             &kp T   &mt C_NEXT C_VOL_UP                                                                                   &kp C_BRIGHTNESS_INC      &kp Y   &kp U             &kp I                 &kp O             &kp P               &kp BACKSLASH
+&sk LC(LA(LS(LEFT_COMMAND)))  &kp A               &kp S             &kp D                 &kp F             &kp G   &mt C_PREV C_VOL_DN  &kp INSERT        &kp LA(LS(LC(DOWN)))      &kp RS(RA(RC(UP_ARROW)))  &sl 12     &kp C_BRIGHTNESS_DEC      &kp H   &kp J             &kp K                 &kp L             &kp SEMICOLON       &kp ESCAPE
 &kp LSHIFT                    &kp Z               &kp X             &kp C                 &kp V             &kp B                                          &kp LS(LA(LC(LEFT)))      &kp RS(RA(RC(RIGHT)))                                          &kp N   &kp M             &kp COMMA             &kp DOT           &kp FSLH            &kp RSHIFT
-&sticky_layer_mo 29 12        &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 11 BACKSPACE  &thumb 12 DELETE  &m_alt_tab_custom         &kp RG(SPACE)             &kp ENTER  &space 10 SPACE                   &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL  &kp_sk CAPSLOCK CAPSLOCK
+&sticky_layer_mo 29 12        &kp_sk LCTRL LCTRL  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LGUI LGUI          &thumb 11 BACKSPACE  &thumb 12 DELETE  &m_alt_tab_mod_morph      &kp RG(SPACE)             &kp ENTER  &space 10 SPACE                   &kp_sk RGUI RGUI  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RCTRL RCTRL  &kp_sk CAPSLOCK CAPSLOCK
             >;
         };
 
@@ -1207,11 +1225,11 @@
 
         WinBase {
             bindings = <
-&kp EQUAL               &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &lt 29 K_PP                                                                                            &win_to_mac_service 29 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0            &kp MINUS
-&kp TAB                 &kp Q             &kp W             &kp E                 &kp R               &kp T   &mt K_NEXT C_VOL_DN                                                                                    &kp C_BRIGHTNESS_INC      &kp Y   &kp U               &kp I                 &kp O             &kp P             &kp BACKSLASH
-&sl 16                  &kp A             &kp S             &kp D                 &kp F               &kp G   &mt K_PREV C_VOL_DN  &kp INS           &kp LWIN                    &kp RC(RS(RA(F10)))     &kp ESCAPE  &kp C_BRIGHTNESS_DEC      &kp H   &kp J               &kp K                 &kp L             &kp SEMICOLON     &kp ESCAPE
+&kp EQUAL               &kp N1            &kp N2            &kp N3                &kp N4              &kp N5  &lt 29 C_PP                                                                                            &win_to_mac_service 29 0  &kp N6  &kp N7              &kp N8                &kp N9            &kp N0            &kp MINUS
+&kp TAB                 &kp Q             &kp W             &kp E                 &kp R               &kp T   &mt C_NEXT C_VOL_UP                                                                                    &kp C_BRIGHTNESS_INC      &kp Y   &kp U               &kp I                 &kp O             &kp P             &kp BACKSLASH
+&sl 16                  &kp A             &kp S             &kp D                 &kp F               &kp G   &mt C_PREV C_VOL_DN  &kp INS           &kp LWIN                    &kp RC(RS(RA(F10)))     &kp ESCAPE  &kp C_BRIGHTNESS_DEC      &kp H   &kp J               &kp K                 &kp L             &kp SEMICOLON     &kp ESCAPE
 &kp LSHIFT              &kp Z             &kp X             &kp C                 &kp V               &kp B                                          &sticky_layer_mo 27 27      &sticky_layer_mo 27 27                                        &kp N   &kp M               &kp COMMA             &kp PERIOD        &kp SLASH         &kp RSHIFT
-&sticky_layer_mo 29 27  &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE  &thumb 16 DELETE  &w_alt_tab_layer            &w_alt_tab_layer        &kp ENTER   &space 25 SPACE                   &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &kp_sk CAPSLOCK CAPSLOCK
+&sticky_layer_mo 29 27  &kp_sk LGUI LGUI  &kp_sk LALT LALT  &kp_sk LSHIFT LSHIFT  &kp_sk LCTRL LCTRL          &thumb 26 BACKSPACE  &thumb 16 DELETE  &w_alt_tab_mod_morph        &w_alt_tab_layer        &kp ENTER   &space 25 SPACE                   &kp_sk RCTRL RCTRL  &kp_sk RSHIFT RSHIFT  &kp_sk RALT RALT  &kp_sk RGUI RGUI  &kp_sk CAPSLOCK CAPSLOCK
             >;
         };
 
