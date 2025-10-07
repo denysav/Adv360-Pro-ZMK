@@ -371,7 +371,7 @@
             bindings = <&mo>, <&mac_to_win>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <750>;
         };
 
         win_to_mac_service: win_to_mac_service {
@@ -380,7 +380,7 @@
             bindings = <&mo>, <&win_to_mac>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <750>;
         };
 
         m_alt_tab_mod_morph: m_alt_tab_mod_morph {
