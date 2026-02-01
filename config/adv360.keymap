@@ -733,11 +733,11 @@
 
         WinBase {
             bindings = <
-&kp EQUAL   &kp N1    &kp N2    &kp N3      &kp N4     &kp N5  &lt 6 C_PP                                                                                            &win_to_mac_service 6 0  &kp N6  &kp N7     &kp N8      &kp N9      &kp N0         &kp MINUS
+&kp EQUAL   &kp N1    &kp N2    &kp N3      &kp N4     &kp N5  &lt 7 C_PP                                                                                            &win_to_mac_service 7 0  &kp N6  &kp N7     &kp N8      &kp N9      &kp N0         &kp MINUS
 &kp TAB     &kp Q     &kp W     &kp E       &kp R      &kp T   &mt C_NEXT C_VOL_UP                                                                                   &kp C_BRIGHTNESS_INC     &kp Y   &kp U      &kp I       &kp O       &kp P          &kp BACKSLASH
 &kp ESCAPE  &kp A     &kp S     &kp D       &kp F      &kp G   &mt C_PREV C_VOL_DN  &kp INS          &kp LWIN                  &kp RC(RS(RA(F10)))   &kp ESCAPE      &kp C_BRIGHTNESS_DEC     &kp H   &kp J      &kp K       &kp L       &kp SEMICOLON  &kp SQT
 &kp LSHIFT  &kp Z     &kp X     &kp C       &kp V      &kp B                                         &sticky_layer_mo 3 3      &sticky_layer_mo 3 3                                           &kp N   &kp M      &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHIFT
-&mo 6       &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL          &thumb 2 BACKSPACE   &thumb 3 DELETE  &w_alt_tab_mod_morph      &w_alt_tab_layer      &thumb 5 ENTER  &space 1 SPACE                   &sk RCTRL  &sk RSHIFT  &sk RALT    &sk RGUI       &mo 6
+&mo 7       &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL          &thumb 2 BACKSPACE   &thumb 3 DELETE  &w_alt_tab_mod_morph      &w_alt_tab_layer      &thumb 5 ENTER  &space 1 SPACE                   &sk RCTRL  &sk RSHIFT  &sk RALT    &sk RGUI       &mo 7
             >;
         };
 
@@ -788,6 +788,16 @@
 &none  &kp LA(A)   &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)   &none  &none  &none      &none  &none  &none  &kp RA(H)   &kp RA(J)   &kp RA(K)      &kp RA(L)       &kp RA(SEMICOLON)  &none
 &none  &kp LA(Z)   &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)                 &none      &none                &kp RA(N)   &kp RA(M)   &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)      &none
 &none  &none       &none       &none       &none                   &none  &none  &none      &none  &none  &none              &none       &none          &none           &none              &none
+            >;
+        };
+
+        Gaming {
+            bindings = <
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp BACKSPACE                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp         &kp           &kp Q         &kp W         &kp E         &kp R   &kp T                                  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp         &kp           &kp A         &kp S         &kp D         &kp F   &kp G          &kp  &kp      &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp         &kp           &kp           &kp           &kp C         &kp V                       &kp      &kp            &kp  &kp  &kp  &kp  &kp  &kp
+&kp         &kp           &kp           &kp           &kp                   &kp            &kp  &kp      &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
             >;
         };
 
