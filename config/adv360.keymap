@@ -586,6 +586,20 @@
             wait-ms = <20>;
             tap-ms = <20>;
         };
+
+        rdp_windows_app_layer: rdb_windows_app_layer {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "RDB_WINDOWS_APP_LAYER";
+        };
     };
 
     keymap {
@@ -643,11 +657,11 @@
 
         win_app_layer {
             bindings = <
-&none  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none                                  &none  &kp RG(N6)  &kp RG(N7)  &kp RG(N8)     &kp RG(N9)      &kp RG(N0)         &none
-&none  &kp LA(Q)   &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)   &none                                  &none  &kp RA(Y)   &kp LA(U)   &kp RA(I)      &kp RA(O)       &kp RA(P)          &none
-&none  &kp LA(A)   &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)   &none  &none  &none      &none  &none  &none  &kp RA(H)   &kp RA(J)   &kp RA(K)      &kp RA(L)       &kp RA(SEMICOLON)  &none
-&none  &kp LA(Z)   &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)                 &none      &none                &kp RA(N)   &kp RA(M)   &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)      &none
-&none  &none       &none       &none       &none                   &none  &none  &none      &none  &none  &none              &none       &none          &none           &none              &none
+&none  &kp LG(N1)  &kp LG(N2)                &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none                                  &none  &kp RG(N6)  &kp RG(N7)  &kp RG(N8)     &kp RG(N9)      &kp RG(N0)         &none
+&none  &kp LA(Q)   &rdp_windows_app_layer W  &kp LA(E)   &kp LA(R)   &kp LA(T)   &none                                  &none  &kp RA(Y)   &kp LA(U)   &kp RA(I)      &kp RA(O)       &kp RA(P)          &none
+&none  &kp LA(A)   &kp LA(S)                 &kp LA(D)   &kp LA(F)   &kp LA(G)   &none  &none  &none      &none  &none  &none  &kp RA(H)   &kp RA(J)   &kp RA(K)      &kp RA(L)       &kp RA(SEMICOLON)  &none
+&none  &kp LA(Z)   &kp LA(X)                 &kp LA(C)   &kp LA(V)   &kp LA(B)                 &none      &none                &kp RA(N)   &kp RA(M)   &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)      &none
+&none  &none       &none                     &none       &none                   &none  &none  &none      &none  &none  &none              &none       &none          &none           &none              &none
             >;
         };
 
