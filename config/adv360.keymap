@@ -793,11 +793,11 @@
 
         Gaming {
             bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp BACKSPACE                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp         &kp           &kp Q         &kp W         &kp E         &kp R   &kp T                                  &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp         &kp           &kp A         &kp S         &kp D         &kp F   &kp G          &kp  &kp      &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp         &kp           &kp           &kp           &kp C         &kp V                       &kp      &kp            &kp  &kp  &kp  &kp  &kp  &kp
-&kp         &kp           &kp           &kp           &kp                   &kp            &kp  &kp      &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp BACKSPACE                                            &kp EQUAL      &kp NUMBER_6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB     &kp N0        &kp Q         &kp W         &kp E         &kp R   &kp T                                                    &kp INSERT     &kp Y         &kp U   &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
+&kp I       &kp LSHIFT    &kp A         &kp S         &kp D         &kp F   &kp G          &kp B      &kp N          &kp  &kp        &kp DELETE     &kp H         &kp J   &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp P       &kp LCTRL     &kp Z         &kp X         &kp C         &kp V                             &kp M          &kp                            &kp N         &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHIFT
+&kp         &kp NUMBER_6  &kp N7        &kp N8        &kp N9                &kp SPACE      &kp LCTRL  &kp ENTER      &kp  &kp ENTER  &kp BACKSPACE                &kp     &kp        &kp         &kp            &kp
             >;
         };
 
