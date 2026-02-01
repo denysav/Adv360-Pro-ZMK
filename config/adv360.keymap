@@ -733,11 +733,11 @@
 
         WinBase {
             bindings = <
-&kp EQUAL   &kp N1    &kp N2    &kp N3      &kp N4     &kp N5  &lt 7 C_PP                                                                                            &win_to_mac_service 7 0  &kp N6  &kp N7     &kp N8      &kp N9      &kp N0         &kp MINUS
+&kp EQUAL   &kp N1    &kp N2    &kp N3      &kp N4     &kp N5  &lt 8 C_PP                                                                                            &win_to_mac_service 8 0  &kp N6  &kp N7     &kp N8      &kp N9      &kp N0         &kp MINUS
 &kp TAB     &kp Q     &kp W     &kp E       &kp R      &kp T   &mt C_NEXT C_VOL_UP                                                                                   &kp C_BRIGHTNESS_INC     &kp Y   &kp U      &kp I       &kp O       &kp P          &kp BACKSLASH
 &kp ESCAPE  &kp A     &kp S     &kp D       &kp F      &kp G   &mt C_PREV C_VOL_DN  &kp INS          &kp LWIN                  &kp RC(RS(RA(F10)))   &kp ESCAPE      &kp C_BRIGHTNESS_DEC     &kp H   &kp J      &kp K       &kp L       &kp SEMICOLON  &kp SQT
 &kp LSHIFT  &kp Z     &kp X     &kp C       &kp V      &kp B                                         &sticky_layer_mo 3 3      &sticky_layer_mo 3 3                                           &kp N   &kp M      &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHIFT
-&mo 7       &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL          &thumb 2 BACKSPACE   &thumb 3 DELETE  &w_alt_tab_mod_morph      &w_alt_tab_layer      &thumb 5 ENTER  &space 1 SPACE                   &sk RCTRL  &sk RSHIFT  &sk RALT    &sk RGUI       &mo 7
+&mo 8       &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL          &thumb 2 BACKSPACE   &thumb 3 DELETE  &w_alt_tab_mod_morph      &w_alt_tab_layer      &thumb 5 ENTER  &space 1 SPACE                   &sk RCTRL  &sk RSHIFT  &sk RALT    &sk RGUI       &mo 8
             >;
         };
 
@@ -793,11 +793,21 @@
 
         Gaming {
             bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp BACKSPACE                                            &kp EQUAL      &kp NUMBER_6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
-&kp TAB     &kp N0        &kp Q         &kp W         &kp E         &kp R   &kp T                                                    &kp INSERT     &kp Y         &kp U   &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
-&kp I       &kp LSHIFT    &kp A         &kp S         &kp D         &kp F   &kp G          &kp B      &kp N          &kp  &kp        &kp DELETE     &kp H         &kp J   &kp K      &kp L       &kp SEMICOLON  &kp SQT
-&kp P       &kp LCTRL     &kp Z         &kp X         &kp C         &kp V                             &kp M          &kp                            &kp N         &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHIFT
-&kp         &kp NUMBER_6  &kp N7        &kp N8        &kp N9                &kp SPACE      &kp LCTRL  &kp ENTER      &kp  &kp ENTER  &kp BACKSPACE                &kp     &kp        &kp         &kp            &kp
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp BACKSPACE                                              &kp F5         &kp NUMBER_6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB     &kp N0        &kp Q         &kp W         &kp E         &kp R   &kp T                                                      &kp F4         &kp Y         &kp U   &kp I      &kp O       &kp P          &kp NON_US_BACKSLASH
+&kp I       &kp LSHIFT    &kp A         &kp S         &kp D         &kp F   &kp G          &kp B      &kp N          &none  &none      &kp F12        &kp H         &kp J   &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp P       &kp LCTRL     &kp Z         &kp X         &kp C         &kp V                             &kp M          &none                            &kp N         &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHIFT
+&mo 7       &kp NUMBER_6  &kp N7        &kp N8        &kp N9                &kp SPACE      &kp LCTRL  &kp ENTER      &none  &kp ENTER  &kp BACKSPACE                &none   &none      &none       &none          &to 0
+            >;
+        };
+
+        gaming_cont {
+            bindings = <
+&none  &none  &none     &none           &none      &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none     &kp UP_ARROW    &none      &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none     &none           &none      &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none     &none           &none             &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
