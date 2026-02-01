@@ -657,11 +657,11 @@
 
         win_app_layer {
             bindings = <
-&none  &kp LG(N1)  &kp LG(N2)                &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none                                  &none  &kp RG(N6)  &kp RG(N7)  &kp RG(N8)     &kp RG(N9)      &kp RG(N0)         &none
-&none  &kp LA(Q)   &rdp_windows_app_layer W  &kp LA(E)   &kp LA(R)   &kp LA(T)   &none                                  &none  &kp RA(Y)   &kp LA(U)   &kp RA(I)      &kp RA(O)       &kp RA(P)          &none
-&none  &kp LA(A)   &kp LA(S)                 &kp LA(D)   &kp LA(F)   &kp LA(G)   &none  &none  &none      &none  &none  &none  &kp RA(H)   &kp RA(J)   &kp RA(K)      &kp RA(L)       &kp RA(SEMICOLON)  &none
-&none  &kp LA(Z)   &kp LA(X)                 &kp LA(C)   &kp LA(V)   &kp LA(B)                 &none      &none                &kp RA(N)   &kp RA(M)   &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)      &none
-&none  &none       &none                     &none       &none                   &none  &none  &none      &none  &none  &none              &none       &none          &none           &none              &none
+&none  &kp LG(N1)                &kp LG(N2)                &kp LG(N3)                    &kp LG(N4)                &kp LG(N5)                &none                                  &none  &kp RG(N6)                &kp RG(N7)                &kp RG(N8)                    &kp RG(N9)                     &kp RG(N0)                        &none
+&none  &rdp_windows_app_layer Q  &rdp_windows_app_layer W  &rdp_windows_app_layer LA(E)  &rdp_windows_app_layer R  &rdp_windows_app_layer T  &none                                  &none  &rdp_windows_app_layer Y  &rdp_windows_app_layer U  &rdp_windows_app_layer I      &rdp_windows_app_layer O       &rdp_windows_app_layer P          &none
+&none  &rdp_windows_app_layer A  &rdp_windows_app_layer S  &rdp_windows_app_layer D      &rdp_windows_app_layer F  &rdp_windows_app_layer G  &none  &none  &none      &none  &none  &none  &rdp_windows_app_layer H  &rdp_windows_app_layer J  &rdp_windows_app_layer K      &rdp_windows_app_layer L       &rdp_windows_app_layer SEMICOLON  &none
+&none  &rdp_windows_app_layer Z  &rdp_windows_app_layer X  &rdp_windows_app_layer LA(C)  &rdp_windows_app_layer V  &rdp_windows_app_layer B                &none      &none                &rdp_windows_app_layer N  &rdp_windows_app_layer M  &rdp_windows_app_layer COMMA  &rdp_windows_app_layer PERIOD  &rdp_windows_app_layer SLASH      &none
+&none  &none                     &none                     &none                         &none                                               &none  &none  &none      &none  &none  &none                            &none                     &none                         &none                          &none                             &none
             >;
         };
 
