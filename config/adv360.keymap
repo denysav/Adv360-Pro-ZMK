@@ -607,9 +607,9 @@
 
         WinBase {
             bindings = <
-&kp EQUAL   &kp N1    &kp N2    &kp N3      &kp N4     &kp N5  &lt 8 LC(NUMBER_1)                                                                                           &none                 &kp N6  &kp N7     &kp N8      &kp N9      &kp N0         &kp MINUS
+&kp EQUAL   &kp N1    &kp N2    &kp N3      &kp N4     &kp N5  &lt 8 LG(W)                                                                                                  &none                 &kp N6  &kp N7     &kp N8      &kp N9      &kp N0         &kp MINUS
 &kp TAB     &kp Q     &kp W     &kp E       &kp R      &kp T   &kp LG(F)                                                                                                    &kp C_BRIGHTNESS_INC  &kp Y   &kp U      &kp I       &kp O       &kp P          &kp BACKSLASH
-&kp ESCAPE  &kp A     &kp S     &kp D       &kp F      &kp G   &kp LG(H)           &kp INS          &kp LWIN                  &kp RC(RS(RA(F10)))           &kp ESCAPE      &kp C_BRIGHTNESS_DEC  &kp H   &kp J      &kp K       &kp L       &kp SEMICOLON  &kp SQT
+&kp ESCAPE  &kp A     &kp S     &kp D       &kp F      &kp G   &kp LC(NUMBER_1)    &kp INS          &kp LWIN                  &kp RC(RS(RA(F10)))           &kp ESCAPE      &kp C_BRIGHTNESS_DEC  &kp H   &kp J      &kp K       &kp L       &kp SEMICOLON  &kp SQT
 &kp LSHIFT  &kp Z     &kp X     &kp C       &kp V      &kp B                                        &sticky_layer_mo 3 3      &sticky_layer_mo 3 3                                                &kp N   &kp M      &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHIFT
 &mo 8       &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL          &thumb 2 BACKSPACE  &thumb 3 DELETE  &w_alt_tab_mod_morph      &rdp_windows_app_layer SPACE  &thumb 5 ENTER  &space 1 SPACE                &sk RCTRL  &sk RSHIFT  &sk RALT    &sk RGUI       &mo 8
             >;
@@ -657,11 +657,11 @@
 
         win_app_layer {
             bindings = <
-&none  &kp LG(N1)                &kp LG(N2)                &kp LG(N3)                    &kp LG(N4)                &kp LG(N5)                &none                                                                                     &none  &kp RG(N6)                &kp RG(N7)                &kp RG(N8)                    &kp RG(N9)                     &kp RG(N0)                        &none
-&none  &rdp_windows_app_layer Q  &rdp_windows_app_layer W  &rdp_windows_app_layer LA(E)  &rdp_windows_app_layer R  &rdp_windows_app_layer T  &none                                                                                     &none  &rdp_windows_app_layer Y  &rdp_windows_app_layer U  &rdp_windows_app_layer I      &rdp_windows_app_layer O       &rdp_windows_app_layer P          &none
-&none  &rdp_windows_app_layer A  &rdp_windows_app_layer S  &rdp_windows_app_layer D      &rdp_windows_app_layer F  &rdp_windows_app_layer G  &none               &kp RA(RC(RG(NUMBER_2)))  &none                         &none  &none  &none  &rdp_windows_app_layer H  &rdp_windows_app_layer J  &rdp_windows_app_layer K      &rdp_windows_app_layer L       &rdp_windows_app_layer SEMICOLON  &none
-&none  &rdp_windows_app_layer Z  &rdp_windows_app_layer X  &rdp_windows_app_layer LA(C)  &rdp_windows_app_layer V  &rdp_windows_app_layer B                                                &none                         &none                &rdp_windows_app_layer N  &rdp_windows_app_layer M  &rdp_windows_app_layer COMMA  &rdp_windows_app_layer PERIOD  &rdp_windows_app_layer SLASH      &none
-&none  &none                     &none                     &none                         &none                                               &kp RA(RG(RS(N0)))  &kp RC(RA(RG(NUMBER_1)))  &kp RA(RC(RG(NUMBER_3)))      &none  &none  &none                            &none                     &none                         &none                          &none                             &none
+&none  &kp LG(N1)                &kp LG(N2)                &kp LG(N3)                    &kp LG(N4)                &kp LG(N5)                &none                                  &none  &kp RG(N6)                &kp RG(N7)                &kp RG(N8)                    &kp RG(N9)                     &kp RG(N0)                        &none
+&none  &rdp_windows_app_layer Q  &rdp_windows_app_layer W  &rdp_windows_app_layer LA(E)  &rdp_windows_app_layer R  &rdp_windows_app_layer T  &none                                  &none  &rdp_windows_app_layer Y  &rdp_windows_app_layer U  &rdp_windows_app_layer I      &rdp_windows_app_layer O       &rdp_windows_app_layer P          &none
+&none  &rdp_windows_app_layer A  &rdp_windows_app_layer S  &rdp_windows_app_layer D      &rdp_windows_app_layer F  &rdp_windows_app_layer G  &none  &none  &none      &none  &none  &none  &rdp_windows_app_layer H  &rdp_windows_app_layer J  &rdp_windows_app_layer K      &rdp_windows_app_layer L       &rdp_windows_app_layer SEMICOLON  &none
+&none  &rdp_windows_app_layer Z  &rdp_windows_app_layer X  &rdp_windows_app_layer LA(C)  &rdp_windows_app_layer V  &rdp_windows_app_layer B                &none      &none                &rdp_windows_app_layer N  &rdp_windows_app_layer M  &rdp_windows_app_layer COMMA  &rdp_windows_app_layer PERIOD  &rdp_windows_app_layer SLASH      &none
+&none  &none                     &none                     &none                         &none                                               &none  &none  &none      &none  &none  &none                            &none                     &none                         &none                          &none                             &none
             >;
         };
 
