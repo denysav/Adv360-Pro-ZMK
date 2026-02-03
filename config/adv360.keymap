@@ -261,30 +261,6 @@
             timeout-ms = <50>;
         };
 
-        Mac_Nav_Pev_Word {
-            bindings = <&kp LA(LEFT)>;
-            key-positions = <30 31>;
-            timeout-ms = <50>;
-        };
-
-        Mac_Nav_Next_Word {
-            bindings = <&kp RA(RIGHT)>;
-            key-positions = <31 32>;
-            timeout-ms = <50>;
-        };
-
-        m_lock {
-            bindings = <&kp LC(LG(Q))>;
-            key-positions = <0 13>;
-            timeout-ms = <50>;
-        };
-
-        m_select_word_nav {
-            bindings = <&m_select_word_mod>;
-            key-positions = <30 32>;
-            timeout-ms = <50>;
-        };
-
         w_select_word_nav {
             bindings = <&w_select_word_mod>;
             key-positions = <30 32>;
@@ -611,7 +587,7 @@
 &kp TAB     &kp Q     &kp W     &kp E       &kp R      &kp T   &kp LG(F)                                                                                                    &kp C_BRIGHTNESS_INC  &kp Y   &kp U      &kp I       &kp O       &kp P          &kp BACKSLASH
 &kp ESCAPE  &kp A     &kp S     &kp D       &kp F      &kp G   &kp LC(NUMBER_1)    &kp INS          &kp LWIN                  &kp RC(RS(RA(F10)))           &kp ESCAPE      &kp C_BRIGHTNESS_DEC  &kp H   &kp J      &kp K       &kp L       &kp SEMICOLON  &kp SQT
 &kp LSHIFT  &kp Z     &kp X     &kp C       &kp V      &kp B                                        &sticky_layer_mo 3 3      &sticky_layer_mo 3 3                                                &kp N   &kp M      &kp COMMA   &kp PERIOD  &kp SLASH      &kp RSHIFT
-&mo 8       &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL          &thumb 2 BACKSPACE  &thumb 3 DELETE  &w_alt_tab_mod_morph      &rdp_windows_app_layer SPACE  &thumb 5 ENTER  &space 1 SPACE                &sk RCTRL  &sk RSHIFT  &sk RALT    &sk RGUI       &mo 8
+&mo 8       &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL          &thumb 1 BACKSPACE  &thumb 3 DELETE  &w_alt_tab_mod_morph      &rdp_windows_app_layer SPACE  &thumb 5 ENTER  &space 2 SPACE                &sk RCTRL  &sk RSHIFT  &sk RALT    &sk RGUI       &mo 8
             >;
         };
 
